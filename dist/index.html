@@ -17,9 +17,9 @@
 <body>
 
 	
-	<!-- PC端 -->
+	<!-- PC -->
 	<div class="PCbox container-fluid">
-		<!-- 左边 -->
+		<!-- main button of user information -->
 		<div class="leftBox col-md-3">
 			<div class="user col-md-12">
 				<img onclick="pctxTap()" src="/WechatIMG341.32b29be2.jpeg" class="touxiang center-block img-responsive img-circle" alt="Responsive image">
@@ -27,7 +27,7 @@
 				<h4 class="name">Nicole</h4>
 				<span class="logout">log out</span>
 			</div>
-			<!--  -->
+			<!-- list in main page -->
 			<div id="pcleftuserinfo" class="leftTable col-md-12" style="display: block">
 				<table class="table">
 					<tr>
@@ -41,7 +41,7 @@
 					</tr>
 				</table>
 			</div>
-			<!--  -->
+			<!-- list of daily to-do -->
 			<div id="pcleftdailyTodo" class="leftTable col-md-12" style="display: none">
 				<table class="table">
 					<tr>
@@ -56,36 +56,28 @@
 					<tr>
 						<td class="text-center"> <h4>2022.04.10　　　4　items</h4> </td>
 					</tr>
-					<tr>
-						<td class="text-center"> <h4>2022.04.11　　　5　items</h4> </td>
-					</tr>
-					<tr>
-						<td class="text-center"> <h4>2022.04.12　　　6　items</h4> </td>
-					</tr>
-					<tr>
-						<td class="text-center"> <h4>2022.04.13　　　7　items</h4> </td>
-					</tr>
 				</table>
 			</div>
-			<!--  -->
+
 			<div id="pcleftproject" class="leftTable col-md-12" style="display: none">
 				<table id="pcleftprojectlist" class="table">
 					
 				</table>
 			</div>
-			<!--  -->
 			<div id="pcleftmusic" class="leftTable col-md-12" style="display: none">
 				<table id="pcmusiclist" class="table">
 					
 				</table>
 			</div>
 		</div>
-		<!-- 右边 -->
+		<!-- Box of right -->
 		<div class="rightBox col-md-9">
-			<!-- 右边上部 -->
+			<!-- right-up -->
 			<div class="topBox col-md-12">
+				<!-- logo -->
 				<img id="pclogo" onclick="pclogoTap()" src="/logo.ed7723d4.png" class="logo img-responsive" alt="Responsive image">
 				<div class="selectBox col-md-12">
+					<!-- Project -->
 					<div class="btn-group">
 					  <h5 type="button" style="background: #baa5ec" class="selectBtn text-center dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						Project management
@@ -95,6 +87,7 @@
 					    <li onclick="pcProjectTap()" style="background: #baa5ec99"><a href="#">Project</a></li>
 					  </ul>
 					</div>
+					<!-- timer -->
 					<div class="btn-group">
 					  <h5 type="button" style="background: #efa586" class="selectBtn text-center dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						Timer
@@ -105,7 +98,7 @@
 						<li onclick="pcTimerMenuTap(3)" style="background: #efa58666"><a href="#">Pomodoro  Timer</a></li>
 					  </ul>
 					</div>
-					
+					<!-- music player -->
 					<div onclick="pcMusicMenuTap()" class="btn-group">
 					  <h5 type="button" style="background: #90f0e5" class="selectBtn text-center dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						Music player
@@ -114,9 +107,9 @@
 					
 				</div>
 			</div>
-			<!-- 右边下部 -->
+			<!-- right-down -->
 			<div class="bottomBox text-center col-md-12">
-				<!-- 个人信息块的显示 -->
+				<!-- Detail of user information -->
 				<div id="pcuserinfo" class="userinfo text-center" style="display: none">
 					<img src="/WechatIMG341.32b29be2.jpeg" class="touxiang center-block img-responsive img-circle" alt="Responsive image">
 					<div class="row">
@@ -140,8 +133,9 @@
 						<span>Personal Collection</span>
 					</div>
 				</div>
-				<!-- Daily To-do块的显示 -->
+				<!-- Detail of Daily To-do -->
 				<div id="pcdailyTodo" class="dailyTodo" style="display: none">
+					<!-- 2022.04.07 -->
 					<div class="row" style="margin-top: 30px">
 						<div class="col-md-10 col-md-offset-1 text-left" style="color: #baa2ee; padding: 0" data-toggle="collapse" data-target="#zd1">
 							<span class="glyphicon glyphicon-play"></span>
@@ -149,65 +143,65 @@
 						</div>
 						<div id="zd1" class="col-lg-10 col-md-offset-1 collapse" style="">
 							<table class="table" style="background: #e6e6e6; border-radius: 10px; margin-top: 10px; overflow: hidden">
-								<tr><td class="text-left"><input type="checkbox">　　</td></tr>
-								<tr><td class="text-left"><input type="checkbox">　　</td></tr>
-								<tr><td class="text-left"><input type="checkbox">　　</td></tr>
-								<tr><td class="text-left"><input type="checkbox">　　</td></tr>
-								<tr><td class="text-left"><input type="checkbox">　　</td></tr>
+								<tr><td class="text-left"><input type="checkbox">　　DECO2017 A2</td></tr>
+								<tr><td class="text-left"><input type="checkbox">　　DECO2014 A3</td></tr>
+								<tr><td class="text-left"><input type="checkbox">　　OLET2135 M3</td></tr>
+								<tr><td class="text-left"><input type="checkbox">　　OLET1616 M2</td></tr>
+								<tr><td class="text-left"><input type="checkbox">　　OLET1504 M2</td></tr>
 							</table>
 						</div>
 					</div>
+					<!-- 2022.04.08 -->
 					<div class="row" style="margin-top: 30px">
 						<div class="col-md-10 col-md-offset-1 text-left" style="color: #94b7f1; padding: 0" data-toggle="collapse" data-target="#zd2">
 							<span class="glyphicon glyphicon-play"></span>
-							<span>2022.04.07</span>
+							<span>2022.04.08</span>
 						</div>
 						<div id="zd2" class="col-lg-10 col-md-offset-1 collapse" style="">
 							<table class="table" style="background: #e6e6e6; border-radius: 10px; margin-top: 10px; overflow: hidden">
-								<tr><td class="text-left"><input type="checkbox">　　</td></tr>
-								<tr><td class="text-left"><input type="checkbox">　　</td></tr>
-								<tr><td class="text-left"><input type="checkbox">　　</td></tr>
-								<tr><td class="text-left"><input type="checkbox">　　</td></tr>
-								<tr><td class="text-left"><input type="checkbox">　　</td></tr>
+								<tr><td class="text-left"><input type="checkbox">　　DECO2017 A2</td></tr>
+								<tr><td class="text-left"><input type="checkbox">　　DECO2014 A3</td></tr>
+								<tr><td class="text-left"><input type="checkbox">　　OLET2135 M3</td></tr>
+								<tr><td class="text-left"><input type="checkbox">　　OLET1616 M2</td></tr>
 							</table>
 						</div>
 					</div>
+					<!-- 2022.04.09 -->
 					<div class="row" style="margin-top: 30px">
 						<div class="col-md-10 col-md-offset-1 text-left" style="color: #efa586; padding: 0" data-toggle="collapse" data-target="#zd3">
 							<span class="glyphicon glyphicon-play"></span>
-							<span>2022.04.07</span>
+							<span>2022.04.09</span>
 						</div>
 						<div id="zd3" class="col-lg-10 col-md-offset-1 collapse" style="">
 							<table class="table" style="background: #e6e6e6; border-radius: 10px; margin-top: 10px; overflow: hidden">
-								<tr><td class="text-left"><input type="checkbox">　　</td></tr>
-								<tr><td class="text-left"><input type="checkbox">　　</td></tr>
-								<tr><td class="text-left"><input type="checkbox">　　</td></tr>
-								<tr><td class="text-left"><input type="checkbox">　　</td></tr>
-								<tr><td class="text-left"><input type="checkbox">　　</td></tr>
+								<tr><td class="text-left"><input type="checkbox">　　DECO2017 A2</td></tr>
+								<tr><td class="text-left"><input type="checkbox">　　DECO2014 A3</td></tr>
+								<tr><td class="text-left"><input type="checkbox">　　OLET2135 M3</td></tr>
+								<tr><td class="text-left"><input type="checkbox">　　OLET1616 M2</td></tr>
+								<tr><td class="text-left"><input type="checkbox">　　OLET1504 M2</td></tr>
 							</table>
 						</div>
 					</div>
+					<!-- 2022.04.10 -->
 					<div class="row" style="margin-top: 30px">
 						<div class="col-md-10 col-md-offset-1 text-left" style="color: #8ce69c; padding: 0" data-toggle="collapse" data-target="#zd4">
 							<span class="glyphicon glyphicon-play"></span>
-							<span>2022.04.07</span>
+							<span>2022.04.10</span>
 						</div>
 						<div id="zd4" class="col-lg-10 col-md-offset-1 collapse" style="">
 							<table class="table" style="background: #e6e6e6; border-radius: 10px; margin-top: 10px; overflow: hidden">
-								<tr><td class="text-left"><input type="checkbox">　　</td></tr>
-								<tr><td class="text-left"><input type="checkbox">　　</td></tr>
-								<tr><td class="text-left"><input type="checkbox">　　</td></tr>
-								<tr><td class="text-left"><input type="checkbox">　　</td></tr>
-								<tr><td class="text-left"><input type="checkbox">　　</td></tr>
+								<tr><td class="text-left"><input type="checkbox">　　DECO2017 A2</td></tr>
+								<tr><td class="text-left"><input type="checkbox">　　DECO2014 A3</td></tr>
+								<tr><td class="text-left"><input type="checkbox">　　OLET2135 M3</td></tr>
 							</table>
 						</div>
 					</div>
 				</div>
-				<!-- Project块的显示 -->
+				<!-- Project -->
 				<div id="pcproject" class="project" style="display: none">
 					
 				</div>
-				<!-- Timer时钟块 -->
+				<!-- Detail of Timer-->
 				<div id="pcTimer" class="Timer" style="display: none">
 					<div class="col-md-8 col-md-offset-2" style="position: relative">
 						<h3 id="pctimername" class="text-left">Stopwatch</h3>
@@ -262,7 +256,7 @@
 
 					<h1 id="timernumber1">00:00:00</h1>
 				</div>
-				<!-- Music player块 -->
+				<!-- Detail of Music player -->
 				<div id="pcMusicPlayer" class="MusicPlayer" style="display: none">
 					<div class="col-md-8 col-md-offset-2" style="">
 						<div id="audioBox" class="audioBox center-block">
@@ -270,7 +264,6 @@
 								<audio id="myAudio" controls="" style="display: none">
 									<source src="/1.e783d9b7.mp3" type="audio/mpeg">
 									<source src="/1.e783d9b7.mp3" type="audio/ogg">
-									Your browser does not support the audio element.
 								</audio>
 								<img onclick="adZoomTap('suo')" class="shrink" src="/缩小的副本.833f246d.png" alt="">
 								<div class="center">
@@ -295,17 +288,17 @@
 						<img onclick="nextTap()" class="next" src="/24gf-next的副本.55ebcc8b.png" alt="">
 					</div>
 				</div>
-				<!--  -->
 			</div>
 		</div>
 	</div>
 	
-	<!-- 移动端 -->
+	<!-- Mobile -->
 	<div class="YDbox container-fluid">
+		<!-- logo -->
 		<div onclick="ydlogoTap()" id="ydlogo" class="logo">
 			<img class="logoimg" onclick="" src="/logo.ed7723d4.png" alt="Responsive image">
 		</div>
-		<!-- 顶部 -->
+		<!-- Top-Mobile Taskleiste -->
 		<div class="topBox " style="z-index: 9; background: #fff">
 			<div id="yddropdown" class="dropdown">
 				<span id="ydmenuicon" class="menuicon glyphicon glyphicon-option-horizontal dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></span>
@@ -321,9 +314,9 @@
 				</ul>
 			</div>
 		</div>
-		<!-- 中间内容 -->
+		<!-- Mobile content -->
 		<div class="contentBox container-fluid">
-			<!-- 列表1 -->
+			<!-- list1 -->
 			<div id="ydDailytodo" class="list1" style="display: none">
 				<div style="box-sizing: border-box; padding: .5rem 0">
 					<div data-toggle="collapse" data-target="#ydcollapse1" style="color: #b398f8">
@@ -343,7 +336,7 @@
 				<div style="box-sizing: border-box; padding: .5rem 0">
 					<div data-toggle="collapse" data-target="#ydcollapse2" style="color: #89aeef">
 						<span class="glyphicon glyphicon-play"></span>
-						<span>2022.04.07</span>
+						<span>2022.04.08</span>
 					</div>
 					<div class="collapse in" id="ydcollapse2" style="padding: 1.25rem 2rem 0">
 						<table class="table table-bordered" style="background: #e1e1e1; border-radius: 1rem; overflow: hidden">
@@ -358,7 +351,7 @@
 				<div style="box-sizing: border-box; padding: .5rem 0">
 					<div data-toggle="collapse" data-target="#ydcollapse3" style="color: #90f0e5">
 						<span class="glyphicon glyphicon-play"></span>
-						<span>2022.04.07</span>
+						<span>2022.04.09</span>
 					</div>
 					<div class="collapse in" id="ydcollapse3" style="padding: 1.25rem 2rem 0">
 						<table class="table table-bordered" style="background: #e1e1e1; border-radius: 1rem; overflow: hidden">
@@ -371,11 +364,11 @@
 					</div>
 				</div>
 			</div>
-			<!-- 列表2 -->
+			<!-- list2 -->
 			<div id="ydProject" class="list2" style="display: none">
 				
 			</div>
-			<!-- 时钟 -->
+			<!-- Mobile Timer -->
 			<div id="ydTimer" class="timer" style="">
 				<h3>Stopwatch</h3>
 				<div class="timeWarp center-block">
@@ -421,7 +414,7 @@
 					</div>
 				</div>
 			</div>
-			<!-- 音乐 -->
+			<!-- Mobile music player -->
 			<div id="ydMusic" class="music" style="display: none">
 				<div id="ydmusicWarp" class="musicWarp" style="display: block">
 					<img onclick="ydmusicfangTap()" class="fang" src="/放大.a419b01c.png" alt="">
@@ -439,7 +432,7 @@
 				</div>
 
 			</div>
-			<!-- 个人信息 -->
+			<!-- Mobile user information -->
 			<div id="ydUserinfo" class="userinfo" style="display: none">
 				<div class="box">
 					<img class="tx" src="/WechatIMG341.32b29be2.jpeg" alt="">
@@ -466,7 +459,7 @@
 				</div>
 			</div>
 		</div>
-		<!-- 底部 -->
+		<!-- Mobile bottom -->
 		<div class="bottomBox" style="overflow: visible">
 			<div class="dropdown dropup" style="">
 				<div class="img dropdown-toggle" style="border-color: #f0a684" id="tabBar1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -491,26 +484,15 @@
 				<div class="img" style="border-color: #90f0e5" id="tabBar3">
 					<img src="/社交-音乐.86e3047d.png" class="img-responsive" alt="Responsive image">
 				</div>
-				<!-- <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="tabBar3" style="padding: 0;" >
-					<li><a href="#">Action</a></li>
-					<li><a href="#">Another action</a></li>
-					<li><a href="#">Something else here</a></li>
-				</ul> -->
 			</div>
 			<div onclick="ydUserinfoTap()" class="dropdown dropup" style="">
 				<div class="img" style="border-color: #95b9f0" id="tabBar4">
 					<img src="/人物.ddbf2d27.png" class="img-responsive" alt="Responsive image">
 				</div>
-				<!-- <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="tabBar4" style="padding: 0;" >
-					<li><a href="#">Action</a></li>
-					<li><a href="#">Another action</a></li>
-					<li><a href="#">Something else here</a></li>
-				</ul> -->
 			</div>
 		</div>
 
 	</div>
-	
 </body>
 </html>
 <script src="http://localhost:1234/js/script.js"></script>
