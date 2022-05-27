@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Studbud</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<meta name="description" content="" />
+	<meta name="viewport"content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<!-- <link rel="icon" href="img/favicon.png"> -->
+	<!-- <link rel="stylesheet" href="scss/main.scss"> -->
+	<!-- <link rel="stylesheet" href="scss/layout.scss"> -->
+	<!-- <link rel="stylesheet" href="scss/style.scss"> -->
+	<script src="https://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="./bootstrap-3.4.1/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./bootstrap-3.4.1/dist/css/bootstrap-theme.min.css">
+	<script src="./bootstrap-3.4.1/dist/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="./scss/index.css">
+	
+</head>
+
+<body>
+
+	
+	<!-- PC端 -->
+	<div class="PCbox container-fluid" >
+		<!-- 左边 -->
+		<div class="leftBox col-md-3">
+			<div class="user col-md-12" >
+				<img onclick="pctxTap()" src="./image/WechatIMG341.jpeg" class="touxiang center-block img-responsive img-circle" alt="Responsive image">
+
+				<h4 class="name" >Nicole</h4>
+				<span class="logout" >log out</span>
+			</div>
+			<!--  -->
+			<div id="pcleftuserinfo" class="leftTable col-md-12" style="display: block;" >
+				<table class="table" >
+					<tr>
+						<td class="text-center" > <h4>Project management</h4> </td>
+					</tr>
+					<tr>
+						<td class="text-center" > <h4>Timer</h4> </td>
+					</tr>
+					<tr>
+						<td class="text-center" > <h4>Music player</h4> </td>
+					</tr>
+				</table>
+			</div>
+			<!--  -->
+			<div id="pcleftdailyTodo" class="leftTable col-md-12" style="display: none;" >
+				<table class="table" >
+					<tr>
+						<td class="text-center" > <h4>2022.04.07　　　1　items</h4> </td>
+					</tr>
+					<tr>
+						<td class="text-center" > <h4>2022.04.08　　　2　items</h4> </td>
+					</tr>
+					<tr>
+						<td class="text-center" > <h4>2022.04.09　　　3　items</h4> </td>
+					</tr>
+					<tr>
+						<td class="text-center" > <h4>2022.04.10　　　4　items</h4> </td>
+					</tr>
+					<tr>
+						<td class="text-center" > <h4>2022.04.11　　　5　items</h4> </td>
+					</tr>
+					<tr>
+						<td class="text-center" > <h4>2022.04.12　　　6　items</h4> </td>
+					</tr>
+					<tr>
+						<td class="text-center" > <h4>2022.04.13　　　7　items</h4> </td>
+					</tr>
+				</table>
+			</div>
+			<!--  -->
+			<div id="pcleftproject" class="leftTable col-md-12" style="display: none;" >
+				<table id="pcleftprojectlist" class="table" >
+					
+				</table>
+			</div>
+			<!--  -->
+			<div id="pcleftmusic" class="leftTable col-md-12" style="display: none;" >
+				<table id="pcmusiclist" class="table" >
+					
+				</table>
+			</div>
+		</div>
+		<!-- 右边 -->
+		<div class="rightBox col-md-9">
+			<!-- 右边上部 -->
+			<div class="topBox col-md-12" >
+				<img id="pclogo" onclick="pclogoTap()" src="./image/logo.png" class="logo img-responsive" alt="Responsive image">
+				<div class="selectBox col-md-12" >
+					<div class="btn-group" >
+					  <h5 type="button" style="background: rgb(186, 165, 236);" class="selectBtn text-center dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Project management
+					  </h5>
+					  <ul class="dropdown-menu" >
+					    <li onclick="pcDailyTodoTap()" style="background: rgba(186, 165, 236, 0.8);" ><a href="#">Daily To-do</a></li>
+					    <li onclick="pcProjectTap()" style="background: rgba(186, 165, 236, 0.6);" ><a href="#">Project</a></li>
+					  </ul>
+					</div>
+					<div class="btn-group" >
+					  <h5 type="button" style="background: rgb(239, 165, 134);" class="selectBtn text-center dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Timer
+					  </h5>
+					  <ul class="dropdown-menu" >
+					    <li onclick="pcTimerMenuTap(1)" style="background: rgba(239, 165, 134, 0.8);" ><a href="#">Countdown</a></li>
+					    <li onclick="pcTimerMenuTap(2)" style="background: rgba(239, 165, 134, 0.6);" ><a href="#">Stopwatch</a></li>
+						<li onclick="pcTimerMenuTap(3)" style="background: rgba(239, 165, 134, 0.4);" ><a href="#">Pomodoro  Timer</a></li>
+					  </ul>
+					</div>
+					
+					<div onclick="pcMusicMenuTap()" class="btn-group" >
+					  <h5 type="button" style="background: rgb(144, 240, 229);" class="selectBtn text-center dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Music player
+					  </h5>
+					</div>
+					
+				</div>
+			</div>
+			<!-- 右边下部 -->
+			<div class="bottomBox text-center col-md-12" >
+				<!-- 个人信息块的显示 -->
+				<div id="pcuserinfo" class="userinfo text-center" style="display: none;" >
+					<img src="./image/WechatIMG341.jpeg" class="touxiang center-block img-responsive img-circle" alt="Responsive image">
+					<div class="row" >
+						<img src="./image/人物.png" class="img-responsive img-circle" alt="Responsive image">
+						<span>User&nbsp;name&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;Nicole</span>
+					</div>
+					<div class="row" >
+						<img src="./image/邮箱.png" class="img-responsive img-circle" alt="Responsive image">
+						<span>E-mail&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;lytong1114@gmail.com</span>
+					</div>
+					<div class="row" >
+						<img src="./image/电话的副本.png" class="img-responsive img-circle" alt="Responsive image">
+						<span>Phone&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;+86177****6768</span>
+					</div>
+					<div class="row" >
+						<img src="./image/生日.png" class="img-responsive img-circle" alt="Responsive image">
+						<span>Birth&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;2000.07.11</span>
+					</div>
+					<div class="row" >
+						<img src="./image/收藏.png" class="img-responsive img-circle" alt="Responsive image">
+						<span>Personal Collection</span>
+					</div>
+				</div>
+				<!-- Daily To-do块的显示 -->
+				<div id="pcdailyTodo" class="dailyTodo" style="display: none;" >
+					<div class="row" style="margin-top: 30px;" >
+						<div class="col-md-10 col-md-offset-1 text-left" style="padding: 0px;color: #BAA2EE;" data-toggle="collapse" data-target="#zd1" >
+							<span class="glyphicon glyphicon-play"></span>
+							<span>2022.04.07</span>
+						</div>
+						<div id="zd1" class="col-lg-10 col-md-offset-1 collapse" style="" >
+							<table class="table" style="margin-top: 10px;background: #E6E6E6;border-radius: 10px;overflow: hidden;" >
+								<tr><td class="text-left" ><input type="checkbox">　　</td></tr>
+								<tr><td class="text-left" ><input type="checkbox">　　</td></tr>
+								<tr><td class="text-left" ><input type="checkbox">　　</td></tr>
+								<tr><td class="text-left" ><input type="checkbox">　　</td></tr>
+								<tr><td class="text-left" ><input type="checkbox">　　</td></tr>
+							</table>
+						</div>
+					</div>
+					<div class="row" style="margin-top: 30px;" >
+						<div class="col-md-10 col-md-offset-1 text-left" style="padding: 0px;color: #94B7F1;" data-toggle="collapse" data-target="#zd2" >
+							<span class="glyphicon glyphicon-play"></span>
+							<span>2022.04.07</span>
+						</div>
+						<div id="zd2" class="col-lg-10 col-md-offset-1 collapse" style="" >
+							<table class="table" style="margin-top: 10px;background: #E6E6E6;border-radius: 10px;overflow: hidden;" >
+								<tr><td class="text-left" ><input type="checkbox">　　</td></tr>
+								<tr><td class="text-left" ><input type="checkbox">　　</td></tr>
+								<tr><td class="text-left" ><input type="checkbox">　　</td></tr>
+								<tr><td class="text-left" ><input type="checkbox">　　</td></tr>
+								<tr><td class="text-left" ><input type="checkbox">　　</td></tr>
+							</table>
+						</div>
+					</div>
+					<div class="row" style="margin-top: 30px;" >
+						<div class="col-md-10 col-md-offset-1 text-left" style="padding: 0px;color: #EFA586;" data-toggle="collapse" data-target="#zd3" >
+							<span class="glyphicon glyphicon-play"></span>
+							<span>2022.04.07</span>
+						</div>
+						<div id="zd3" class="col-lg-10 col-md-offset-1 collapse" style="" >
+							<table class="table" style="margin-top: 10px;background: #E6E6E6;border-radius: 10px;overflow: hidden;" >
+								<tr><td class="text-left" ><input type="checkbox">　　</td></tr>
+								<tr><td class="text-left" ><input type="checkbox">　　</td></tr>
+								<tr><td class="text-left" ><input type="checkbox">　　</td></tr>
+								<tr><td class="text-left" ><input type="checkbox">　　</td></tr>
+								<tr><td class="text-left" ><input type="checkbox">　　</td></tr>
+							</table>
+						</div>
+					</div>
+					<div class="row" style="margin-top: 30px;" >
+						<div class="col-md-10 col-md-offset-1 text-left" style="padding: 0px;color: #8CE69C;" data-toggle="collapse" data-target="#zd4" >
+							<span class="glyphicon glyphicon-play"></span>
+							<span>2022.04.07</span>
+						</div>
+						<div id="zd4" class="col-lg-10 col-md-offset-1 collapse" style="" >
+							<table class="table" style="margin-top: 10px;background: #E6E6E6;border-radius: 10px;overflow: hidden;" >
+								<tr><td class="text-left" ><input type="checkbox">　　</td></tr>
+								<tr><td class="text-left" ><input type="checkbox">　　</td></tr>
+								<tr><td class="text-left" ><input type="checkbox">　　</td></tr>
+								<tr><td class="text-left" ><input type="checkbox">　　</td></tr>
+								<tr><td class="text-left" ><input type="checkbox">　　</td></tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!-- Project块的显示 -->
+				<div id="pcproject" class="project" style="display: none;" >
+					
+				</div>
+				<!-- Timer时钟块 -->
+				<div id="pcTimer" class="Timer" style="display: none;" >
+					<div class="col-md-8 col-md-offset-2" style="position: relative;" >
+						<h3 id="pctimername" class="text-left" >Stopwatch</h3>
+						<span id="pctimernameTip" class=" glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="right" style="position: absolute;top: 25px;left: 210px;display: none;" title="A learning method that helps users focus. It effectively improves learning efficiency by providing time for study and rest.Default times = 25 mins on, 5 mins off (x4) then 30 mins break" ></span>
+						<div class="timerWarp" >
+							<img onclick="pctimesuoTap()" class="img-responsive" src="./image/缩小.png" alt="" style="width: 40px;margin: 20px;" >
+							<h1 id="timernumber" style="width: 100%;font-size: 100px;" >00:00:00</h1>
+							<img id="pctimersetbtn" onclick="pcsettimerTap()" class="img-responsive img-circle" src="./image/shezhi.png" alt="" style="background: #fff;width: 50px;padding: 8px;margin: 20px;" >
+
+							<div id="pcSetTimer" class="setWarp" style="display: none;" >
+								<div class="box" >
+									<h2>Edit  Timer</h2>
+									<div id="pcsettimercountdownrow" class="row" style="display: noen;" >
+										<input value="0" type="number" name="hour" id="countdownhour" style="width: 50px;" >
+										<span>　hour　</span>
+										<input value="0" type="number" name="minutes" id="countdownminutes" style="width: 50px;" >
+										<span>　minutes　</span>
+									</div>
+									<div id="pcsettimerpomodororow" class="row" style="display: none;" >
+										<span>work</span>
+										<input value="0" type="number" name="hour" id="pomodorohour" style="width: 50px;" >
+										<span>minutes+rest</span>
+										<input value="0" type="number" name="minutes" id="pomodorominutes" style="width: 50px;" >
+										<span>minutes×</span>
+										<input value="0" type="number" name="count" id="pomodorocount" style="width: 50px;" >
+									</div>
+									<div class="row" style="" >
+										<span>Timer Name　:　</span>
+										<input value="Timer Name" type="text" name="timerName" id="timerName">
+									</div>
+									<div class="row" style="" >
+										<span>Timer End Alarm　:　</span>
+										<select name="alarm" style="width: 50px;" >
+											<option value="">1</option>
+											<option value="">2</option>
+										</select>
+									</div>
+									<button onclick="pcsavetimerTap()" style="margin-top: 20px;" >save</button>
+								</div>
+							</div>
+						</div>
+						<div class="" style="display: flex;flex-direction: row;justify-content: space-around;margin-top: 10px;" >
+							<div onclick="pctimerstart()" class="btn" style="background-color: #8CE69C;" >START</div>
+							<div onclick="pctimerstop()" class="btn" style="background-color: #F06F73;" >STOP</div>
+							<div onclick="pctimerreset()" class="btn" style="background-color: #EFA586;" >RESET</div>
+						</div>
+
+					</div>
+				</div>
+				<div id="pctimerMiniBox" class="timerMiniBox" style="display: none;" >
+					<img onclick="pctimerMinifangTap()" src="./image/放大的副本.png" class="img-responsive" alt="">
+
+					<h1 id="timernumber1" >00:00:00</h1>
+				</div>
+				<!-- Music player块 -->
+				<div id="pcMusicPlayer" class="MusicPlayer" style="display: none;" >
+					<div class="col-md-8 col-md-offset-2" style="" >
+						<div id="audioBox" class="audioBox center-block" >
+							<div class="box center-block" >
+								<audio id="myAudio" controls style="display: none;" >
+									<source src="./mp3/1.mp3" type="audio/mpeg" >
+									<source src="./mp3/1.mp3" type="audio/ogg" >
+									Your browser does not support the audio element.
+								</audio>
+								<img onclick="adZoomTap('suo')" class="shrink" src="./image/缩小的副本.png" class="img-responsive" alt="">
+								<div class="center" >
+									<img onclick="previouTap()" class="next" src="./image/24gf-previous的副本2.png" class="img-responsive" alt="">
+									<img id="myAdImg" class="circle img-circle" src="./mp3/1.jpeg" class="img-responsive" alt="">
+									<img onclick="nextTap()" class="next" src="./image/24gf-next的副本.png" class="img-responsive" alt="">
+								</div>
+								<h3 id="myAdName" class="name text-center" >music  one</h3>
+								<div class="bottom" >
+									<img onclick="addTap()" id="adAdd" src="./image/加的副本.png" class="img-responsive" alt="">
+									<img id="adPlay" onclick="playAudio()" src="./image/播放2的副本2.png" class="img-responsive" alt="">
+									<img onclick="reduceTap()" id="adReduce" src="./image/减.png" class="img-responsive" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="audioMiniBox" class="audioMiniBox" >
+					<div class="box" >
+						<img onclick="previouTap()" class="next" src="./image/24gf-previous的副本2.png" class="img-responsive" alt="">
+						<h3 onclick="adZoomTap('fang')" id="myAdName" class="name text-center" >music  one</h3>
+						<img onclick="nextTap()" class="next" src="./image/24gf-next的副本.png" class="img-responsive" alt="">
+					</div>
+				</div>
+				<!--  -->
+			</div>
+		</div>
+	</div>
+	
+	<!-- 移动端 -->
+	<div class="YDbox container-fluid" >
+		<div onclick="ydlogoTap()" id="ydlogo" class="logo" >
+			<img class="logoimg" onclick="" src="./image/logo.png" class="img-responsive center-block" alt="Responsive image">
+		</div>
+		<!-- 顶部 -->
+		<div class="topBox " style="background: #fff;z-index: 9;" >
+			<div id="yddropdown" class="dropdown">
+				<span id="ydmenuicon" class="menuicon glyphicon glyphicon-option-horizontal dropdown-toggle" id="ydMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" ></span>
+
+				<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="ydMenu" style="padding: 0;" >
+					<li onclick="ydDailyTodoTap()" style="background: rgba(129, 175, 255, 0.9);" ><a href="#">Daily To-do</a></li>
+					<li onclick="ydProjectTap()" style="background: rgba(129, 175, 255, 0.8);" ><a href="#">Project</a></li>
+					<li onclick="ydtimerTap(1)" style="background: rgba(129, 175, 255, 0.7);" ><a href="#">Countdown</a></li>
+					<li onclick="ydtimerTap(2)" style="background: rgba(129, 175, 255, 0.6);" ><a href="#">Stopwatch</a></li>
+					<li onclick="ydtimerTap(3)" style="background: rgba(129, 175, 255, 0.5);" ><a href="#">Pomodoro  Timer</a></li>
+					<li onclick="ydMusicTap()" style="background: rgba(129, 175, 255, 0.4);" ><a href="#">Music player</a></li>
+					<li onclick="ydUserinfoTap()" style="background: rgba(129, 175, 255, 0.3);" ><a href="#">Account</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- 中间内容 -->
+		<div class="contentBox container-fluid" >
+			<!-- 列表1 -->
+			<div id="ydDailytodo" class="list1" style="display: none;" >
+				<div style="padding: 0.5rem 0rem 0.5rem 0rem;box-sizing: border-box;" >
+					<div data-toggle="collapse" data-target="#ydcollapse1" style="color: #B398F8;" >
+						<span class="glyphicon glyphicon-play" ></span>
+						<span>2022.04.07</span>
+					</div>
+					<div class="collapse in" id="ydcollapse1" style="padding: 1.25rem 2rem 0rem 2rem;" >
+						<table class="table table-bordered" style="background: #E1E1E1;border-radius: 1rem;overflow: hidden;" >
+							<tr><td><input type="checkbox"></td></tr>
+							<tr><td><input type="checkbox"></td></tr>
+							<tr><td><input type="checkbox"></td></tr>
+							<tr><td><input type="checkbox"></td></tr>
+							<tr><td><input type="checkbox"></td></tr>
+						</table>
+					</div>
+				</div>
+				<div style="padding: 0.5rem 0rem 0.5rem 0rem;box-sizing: border-box;" >
+					<div data-toggle="collapse" data-target="#ydcollapse2" style="color: #89AEEF;" >
+						<span class="glyphicon glyphicon-play" ></span>
+						<span>2022.04.07</span>
+					</div>
+					<div class="collapse in" id="ydcollapse2" style="padding: 1.25rem 2rem 0rem 2rem;" >
+						<table class="table table-bordered" style="background: #E1E1E1;border-radius: 1rem;overflow: hidden;" >
+							<tr><td><input type="checkbox"></td></tr>
+							<tr><td><input type="checkbox"></td></tr>
+							<tr><td><input type="checkbox"></td></tr>
+							<tr><td><input type="checkbox"></td></tr>
+							<tr><td><input type="checkbox"></td></tr>
+						</table>
+					</div>
+				</div>
+				<div style="padding: 0.5rem 0rem 0.5rem 0rem;box-sizing: border-box;" >
+					<div data-toggle="collapse" data-target="#ydcollapse3" style="color: #90F0E5;" >
+						<span class="glyphicon glyphicon-play" ></span>
+						<span>2022.04.07</span>
+					</div>
+					<div class="collapse in" id="ydcollapse3" style="padding: 1.25rem 2rem 0rem 2rem;" >
+						<table class="table table-bordered" style="background: #E1E1E1;border-radius: 1rem;overflow: hidden;" >
+							<tr><td><input type="checkbox"></td></tr>
+							<tr><td><input type="checkbox"></td></tr>
+							<tr><td><input type="checkbox"></td></tr>
+							<tr><td><input type="checkbox"></td></tr>
+							<tr><td><input type="checkbox"></td></tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			<!-- 列表2 -->
+			<div id="ydProject" class="list2" style="display: none;" >
+				
+			</div>
+			<!-- 时钟 -->
+			<div id="ydTimer" class="timer" style="" style="display: none;" >
+				<h3>Stopwatch</h3>
+				<div class="timeWarp center-block" >
+					<img class="img1" src="./image/放大的副本.png" class="img-responsive" alt="">
+					<h1 id="timernumber2" >00:00:00</h1>
+					<img onclick="ydsettimerTap()" class="img2" src="./image/shezhi.png" class="img-responsive" alt="">
+				</div>
+				<div class="btnBox" >
+					<div onclick="pctimerstart()" style="background: #8CE69C;" >START</div>
+					<div onclick="pctimerstop()" style="background: #F06F73;" >STOP</div>
+					<div onclick="pctimerreset()" style="background: #EFA586;" >RESET</div>
+				</div>
+
+				<div id="ydSetTimer" class="setWarp" style="display: none;" >
+					<div class="box" >
+						<h4>Edit  Timer</h4>
+						<div id="ydsettimercountdownrow" class="row" style="display: noen;" >
+							<input value="0" type="number" name="hour" id="countdownhour1" style="width: 50px;" >
+							<span>　hour　</span>
+							<input value="0" type="number" name="minutes" id="countdownminutes1" style="width: 50px;" >
+							<span>　minutes　</span>
+						</div>
+						<div id="ydsettimerpomodororow" class="row" style="display: none;" >
+							<span>work</span>
+							<input value="0" type="number" name="hour" id="pomodorohour1" style="width: 50px;" >
+							<span>minutes+rest</span>
+							<input value="0" type="number" name="minutes" id="pomodorominutes1" style="width: 50px;" >
+							<span>minutes×</span>
+							<input value="0" type="number" name="count" id="pomodorocount1" style="width: 50px;" >
+						</div>
+						<div class="row" style="" >
+							<span>Timer Name　:　</span>
+							<input value="Timer Name" type="text" name="timerName" id="timerName">
+						</div>
+						<div class="row" style="" >
+							<span>Timer End Alarm　:　</span>
+							<select name="alarm" style="width: 50px;" >
+								<option value="">1</option>
+								<option value="">2</option>
+							</select>
+						</div>
+						<button onclick="ydsavetimerTap()" style="margin-top: 0.4rem;margin-bottomss: 0.4rem;" >save</button>
+					</div>
+				</div>
+			</div>
+			<!-- 音乐 -->
+			<div id="ydMusic" class="music" style="display: none;" >
+				<div id="ydmusicWarp" class="musicWarp" style="display: block;" >
+					<img onclick="ydmusicfangTap()" class="fang" src="./image/放大.png" class="img-responsive" alt="">
+					<div class="box1" >
+						<img onclick="previouTap()" class="next" src="./image/24gf-previous的副本2.png" class="img-responsive" alt="">
+						<img id="myAdImg1" class="yuan" src="./mp3/1.jpeg" class="img-responsive" alt="">
+						<img onclick="nextTap()" class="next" src="./image/24gf-next的副本.png" class="img-responsive" alt="">
+					</div>
+					<h4 id="myAdName1" >Music1</h4>
+					<div class="box2" >
+						<img onclick="addTap()" class="add" src="./image/加的副本.png" class="img-responsive" alt="">
+						<img id="adPlay1" onclick="playAudio()" class="play" src="./image/播放2的副本2.png" class="img-responsive" alt="">
+						<img onclick="reduceTap()" class="add" src="./image/减.png" class="img-responsive" alt="">
+					</div>
+				</div>
+
+			</div>
+			<!-- 个人信息 -->
+			<div id="ydUserinfo" class="userinfo" style="display: none;" >
+				<div class="box" >
+					<img class="tx" src="./image/WechatIMG341.jpeg" class="img-responsive" alt="">
+					<div class="row" >
+						<img src="./image/人物.png" class="img-responsive img-circle" alt="Responsive image">
+						<span>User&nbsp;name&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;Nicole</span>
+					</div>
+					<div class="row" >
+						<img src="./image/邮箱.png" class="img-responsive img-circle" alt="Responsive image">
+						<span>E-mail&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;lytong1114@gmail.com</span>
+					</div>
+					<div class="row" >
+						<img src="./image/电话的副本.png" class="img-responsive img-circle" alt="Responsive image">
+						<span>Phone&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;+86177****6768</span>
+					</div>
+					<div class="row" >
+						<img src="./image/生日.png" class="img-responsive img-circle" alt="Responsive image">
+						<span>Birth&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;2000.07.11</span>
+					</div>
+					<div class="row" >
+						<img src="./image/收藏.png" class="img-responsive img-circle" alt="Responsive image">
+						<span>Personal Collection</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 底部 -->
+		<div class="bottomBox" style="overflow: visible;" >
+			<div class="dropdown dropup" style="">
+				<div class="img dropdown-toggle" style="border-color: #F0A684;" id="tabBar1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" >
+					<img src="./image/闹钟.png" class="img-responsive" alt="Responsive image"  >
+				</div>
+				<ul class="dropdown-menu dropdown-menu-left" aria-labelledby="tabBar1" style="padding: 0;" >
+					<li onclick="ydtimerTap(3)" style="background: rgba(240, 166, 132, 0.3);" ><a href="#">Pomodoro  Timer</a></li>
+					<li onclick="ydtimerTap(2)" style="background: rgba(240, 166, 132, 0.5);" ><a href="#">Stopwatch</a></li>
+					<li onclick="ydtimerTap(1)" style="background: rgba(240, 166, 132, 0.8);" ><a href="#">Countdown</a></li>
+				</ul>
+			</div>
+			<div class="dropdown dropup" style="">
+				<div class="img dropdown-toggle" style="border-color: #BBA3F0;" id="tabBar2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" >
+					<img src="./image/todo.png" class="img-responsive" alt="Responsive image" >
+				</div>
+				<ul class="dropdown-menu dropdown-menu-left" aria-labelledby="tabBar2" style="padding: 0;" >
+					<li onclick="ydProjectTap()" style="background: rgba(187, 163, 240, 0.4);" ><a href="#">Project</a></li>
+					<li onclick="ydDailyTodoTap()" style="background: rgba(187, 163, 240, 0.8);" ><a href="#">Daily　To-do</a></li>
+				</ul>
+			</div>
+			<div onclick="ydMusicTap()" class="dropdown dropup" style="">
+				<div class="img" style="border-color: #90F0E5;" id="tabBar3"  >
+					<img src="./image/社交-音乐.png" class="img-responsive" alt="Responsive image" >
+				</div>
+				<!-- <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="tabBar3" style="padding: 0;" >
+					<li><a href="#">Action</a></li>
+					<li><a href="#">Another action</a></li>
+					<li><a href="#">Something else here</a></li>
+				</ul> -->
+			</div>
+			<div onclick="ydUserinfoTap()" class="dropdown dropup" style="">
+				<div class="img" style="border-color: #95B9F0;" id="tabBar4"  >
+					<img src="./image/人物.png" class="img-responsive" alt="Responsive image"  >
+				</div>
+				<!-- <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="tabBar4" style="padding: 0;" >
+					<li><a href="#">Action</a></li>
+					<li><a href="#">Another action</a></li>
+					<li><a href="#">Something else here</a></li>
+				</ul> -->
+			</div>
+		</div>
+
+	</div>
+	
+</body>
+</html>
+<script src="http://localhost:1234/js/script.js" ></script>
+<!-- <script src="script.js"></script> -->
+

@@ -1,0 +1,788 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+div::-webkit-scrollbar {
+  width: 0;
+}
+
+@media (max-width: 999px) {
+  .PCbox {
+    display: none;
+  }
+
+  .YDbox {
+    display: block;
+  }
+}
+
+@media (min-width: 1000px) {
+  .PCbox {
+    display: block;
+  }
+
+  .YDbox {
+    display: none;
+  }
+}
+
+.dropdown-menu li {
+  text-align: center;
+}
+
+.PCbox {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.leftBox {
+  height: 100%;
+  background: #dedede;
+  padding: 0;
+}
+
+.user {
+  height: 30%;
+  text-align: center;
+  border-bottom: 2px solid #c1c1c1;
+}
+
+.touxiang {
+  width: 130px;
+  margin-top: 20px;
+}
+
+.name {
+  margin-top: 10px;
+}
+
+.logout {
+  color: #fff;
+  background: #f26c74;
+  border-radius: 3px;
+  padding: 3px 13px 5px;
+  font-size: 10px;
+}
+
+.leftTable {
+  height: 70%;
+  padding: 0;
+  overflow-y: scroll;
+}
+
+.leftTable td {
+  border-bottom: 1px solid #c1c1c1;
+}
+
+.rightBox {
+  height: 100%;
+  padding: 0;
+}
+
+.topBox {
+  height: 30%;
+  border-bottom: 2px solid #c1c1c1;
+  padding: 0;
+  position: relative;
+}
+
+.logo {
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  padding: 200px 500px;
+  animation-name: pclogdh;
+  animation-duration: .5s;
+  animation-timing-function: linear;
+  animation-play-state: paused;
+  animation-fill-mode: forwards;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@keyframes pclogdh {
+  from {
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    padding: 200px 500px;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  to {
+    z-index: 99;
+    width: 200px;
+    height: auto;
+    background: #fff;
+    padding: 0;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+  }
+}
+
+.selectBox {
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+}
+
+.selectBtn {
+  width: 200px;
+  border-radius: 5px 5px 0 0;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 700;
+}
+
+.selectBox ul {
+  width: 200px;
+  padding: 0;
+}
+
+.selectBox ul li a {
+  text-align: center;
+}
+
+.bottomBox {
+  width: 100%;
+  height: 70%;
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+}
+
+.userinfo {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+.userinfo .touxiang {
+  width: 130px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.userinfo .row {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.userinfo .row img {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #bdcad4;
+  margin-right: 30px;
+  padding: 3px;
+}
+
+.userinfo .row span {
+  width: 260px;
+  text-align: left;
+  color: #838383;
+}
+
+.dailyTodo {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.project {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 30px;
+  display: none;
+}
+
+.project td {
+  width: 25%;
+}
+
+.Timer {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.Timer .timerWarp {
+  width: 100%;
+  height: 300px;
+  background: #dedede;
+  border-radius: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  display: flex;
+  position: relative;
+}
+
+.Timer .timerWarp .setWarp {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.Timer .timerWarp .setWarp .box {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background: #dedede;
+  border: 1px solid #b6b6b6;
+  border-radius: 20px;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.Timer .timerWarp .row {
+  width: 300px;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+  display: flex;
+}
+
+.Timer .btn {
+  width: 80px;
+  height: 80px;
+  color: #fff;
+  background: #8ce69c;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  box-shadow: 2px 2px 2px #888;
+}
+
+.timerMiniBox {
+  background: #d9d9d9;
+  border-radius: 15px;
+  padding: 0 40px 10px;
+  position: fixed;
+  top: 10px;
+  right: 400px;
+}
+
+.timerMiniBox img {
+  float: right;
+  width: 30px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.timerMiniBox h1 {
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 80px;
+}
+
+.MusicPlayer {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.MusicPlayer .audioBox {
+  width: 600px;
+  background: #dedede;
+  border: 2px solid #bfbfbf;
+  border-radius: 20px;
+  margin-top: 80px;
+  display: block;
+}
+
+.MusicPlayer .audioBox .box {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  display: flex;
+}
+
+.MusicPlayer .audioBox .shrink {
+  width: 35px;
+  margin: 15px;
+}
+
+.MusicPlayer .audioBox .center {
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20px;
+  display: flex;
+}
+
+.MusicPlayer .audioBox .center .next {
+  width: 50px;
+}
+
+.MusicPlayer .audioBox .center .circle {
+  width: 150px;
+  height: 150px;
+  border: 20px solid #040404;
+  animation: circle 5s linear infinite;
+}
+
+@keyframes circle {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.MusicPlayer .audioBox .name {
+  width: 100%;
+  color: #828081;
+}
+
+.MusicPlayer .audioBox .bottom {
+  width: 100%;
+  height: 80px;
+  border-top: 2px solid #bfbfbf;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+}
+
+.MusicPlayer .audioBox .bottom img {
+  width: 40px;
+}
+
+.audioMiniBox {
+  display: none;
+  position: fixed;
+  top: 40px;
+  right: 70px;
+}
+
+.audioMiniBox .box {
+  background: #dedede;
+  border: 2px solid #bfbfbf;
+  border-radius: 15px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  display: flex;
+}
+
+.audioMiniBox .name {
+  width: 100px;
+  white-space: nowrap;
+  color: #828081;
+  margin: 10px 20px;
+  overflow: hidden;
+}
+
+.audioMiniBox .next {
+  width: 20px;
+}
+
+.YDbox {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 9rem 0;
+  overflow-y: scroll;
+}
+
+.YDbox .logo {
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
+  padding: 0 6rem;
+  animation-name: logdh;
+  animation-duration: .5s;
+  animation-timing-function: linear;
+  animation-play-state: paused;
+  animation-fill-mode: forwards;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.YDbox img {
+  width: 100%;
+}
+
+@keyframes logdh {
+  from {
+    width: 100%;
+    height: 100%;
+    padding: 0 6rem;
+    top: 0;
+    left: 0;
+  }
+
+  to {
+    width: 22rem;
+    height: 7.1rem;
+    background: none;
+    padding: 0 5rem;
+    top: 1rem;
+    left: 26%;
+  }
+}
+
+.YDbox .topBox {
+  width: 100%;
+  height: 8.9rem;
+  background: #fff;
+  border-bottom: .1625rem solid #6c6c6c;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.YDbox .topBox .dropdown {
+  float: right;
+  text-align: right;
+  margin-top: 2.8rem;
+}
+
+.YDbox .topBox .menuicon {
+  color: #81affb;
+  text-align: center;
+  margin-right: 1.8rem;
+  font-size: 2.25rem;
+}
+
+.YDbox .bottomBox {
+  width: 100%;
+  height: 8.8rem;
+  box-sizing: border-box;
+  background: #e1e1e1;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  overflow: visible;
+}
+
+.YDbox .bottomBox .img {
+  background: #fff;
+  border: .5125rem solid;
+  border-radius: 50%;
+  padding: .9125rem;
+}
+
+.YDbox .bottomBox .img img {
+  width: 3rem;
+  height: 3rem;
+  background: #fff;
+}
+
+.YDbox .contentBox {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.YDbox .contentBox .list1, .YDbox .contentBox .list2 {
+  width: 100%;
+  display: none;
+}
+
+.YDbox .contentBox .list2 .tab {
+  width: 100%;
+  background: #e1e1e1;
+}
+
+.YDbox .contentBox .list2 .tabHead {
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.YDbox .contentBox .list2 .tabHead span {
+  width: 25%;
+  text-align: center;
+  font-size: .4rem;
+}
+
+.YDbox .contentBox .list2 .tab table {
+  width: 100%;
+}
+
+.YDbox .contentBox .list2 .tab table td {
+  width: 25%;
+  text-align: center;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: nowrap;
+  font-size: .1rem;
+  overflow: hidden;
+}
+
+.YDbox .contentBox .timer {
+  width: 100%;
+  display: none;
+  position: relative;
+}
+
+.YDbox .contentBox .timer h2 {
+  margin-top: 2.5rem;
+}
+
+.YDbox .contentBox .timer .timeWarp {
+  width: 90%;
+  background: #e1e1e1;
+  border-radius: 1.25rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 2.5rem;
+  padding: 1.25rem;
+  display: flex;
+}
+
+.YDbox .contentBox .timer .timeWarp .img1 {
+  float: right;
+  width: 3rem;
+}
+
+.YDbox .contentBox .timer .timeWarp h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+.YDbox .contentBox .timer .timeWarp .img2 {
+  float: right;
+  width: 4rem;
+  height: 4rem;
+  background: #fff;
+  border-radius: 50%;
+  padding: .8rem;
+}
+
+.YDbox .contentBox .timer .btnBox {
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.875rem;
+  display: flex;
+}
+
+.YDbox .contentBox .timer .btnBox div {
+  width: 6rem;
+  height: 6rem;
+  color: #fff;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.YDbox .contentBox .timer .setWarp {
+  margin: 0 auto;
+  padding-top: 2rem;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.YDbox .contentBox .timer .setWarp .box {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background: #dedede;
+  border: 1px solid #b6b6b6;
+  border-radius: 1.2rem;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1.25rem;
+  display: flex;
+}
+
+.YDbox .contentBox .timer .row {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: .7rem;
+  display: flex;
+}
+
+.YDbox .contentBox .music {
+  width: 100%;
+  display: none;
+}
+
+.YDbox .contentBox .music .musicWarp {
+  z-index: 99;
+  background: #e1e1e1;
+  border-radius: 1.25rem;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3.125rem;
+  padding: 4rem 0 2rem;
+  animation-name: ydmusicfang;
+  animation-duration: .5s;
+  animation-timing-function: linear;
+  animation-play-state: paused;
+  animation-fill-mode: forwards;
+  display: flex;
+  position: relative;
+}
+
+@keyframes ydmusicfang {
+  0% {
+    background: #e1e1e1;
+    border-radius: 1.25rem;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3.125rem;
+    padding: 4rem 0 2rem;
+    display: flex;
+    position: relative;
+    transform: rotate(0deg);
+  }
+
+  50% {
+    background: #e1e1e1;
+    border-radius: 1.25rem;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3.125rem;
+    padding: 4rem 0 2rem;
+    display: flex;
+    position: relative;
+    transform: rotate(90deg);
+  }
+
+  100% {
+    width: 100%;
+    height: 100%;
+    background: #e1e1e1;
+    border-radius: 0;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    padding: 4rem 0 2rem;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: rotate(90deg);
+  }
+}
+
+.YDbox .contentBox .music .musicWarp .fang {
+  width: 2rem;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+}
+
+.YDbox .contentBox .music .musicWarp .box1 {
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+}
+
+.YDbox .contentBox .music .musicWarp .box1 .next {
+  width: 4rem;
+}
+
+.YDbox .contentBox .music .musicWarp .box1 .yuan {
+  width: 12rem;
+  height: 12rem;
+  border: 2rem solid #040404;
+  border-radius: 50%;
+  animation: circle 5s linear infinite;
+}
+
+.YDbox .contentBox .music .musicWarp h4 {
+  width: 100%;
+  text-align: center;
+}
+
+.YDbox .contentBox .music .musicWarp .box2 {
+  width: 100%;
+  border-top: .2rem solid #b6b6b6;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 1rem;
+  display: flex;
+}
+
+.YDbox .contentBox .music .musicWarp .box2 .add, .YDbox .contentBox .music .musicWarp .box2 .play {
+  width: 3rem;
+}
+
+.YDbox .contentBox .userinfo {
+  width: 100%;
+  display: block;
+}
+
+.YDbox .contentBox .userinfo .box {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.YDbox .contentBox .userinfo .box .tx {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  margin: 2.5rem;
+}
+
+.YDbox .contentBox .userinfo .box .row {
+  color: red;
+}
+
+/*# sourceMappingURL=index.1719b9d6.css.map */

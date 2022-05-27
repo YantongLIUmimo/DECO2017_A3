@@ -1,0 +1,40 @@
+{
+  "name": "studbud-2022",
+  "version": "1.0.0",
+  "description": "Web application for studying",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build ./public/index.html",
+	"prestart": "parcel build ./public/index.html",
+    "dev": "parcel serve ./public/index.html --no-cache",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YantongLIUmimo/studbud-2022.git"
+  },
+  "author": "Mimo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YantongLIUmimo/studbud-2022/issues"
+  },
+  "homepage": "https://github.com/YantongLIUmimo/studbud-2022#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.5.0",
+    "autoprefixer": "^10.4.7",
+    "parcel": "^2.5.0",
+    "postcss": "^8.4.13",
+    "sass": "^1.51.0"
+  },
+  "staticFiles": {
+    "staticPath": "public",
+    "watcherGlob": "**"
+  },
+  "keywords": []
+}
+
+

@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  //字体
+
+}
+
+.clearfix{
+  clear: both;
+}
+
+#sidebar{
+  float: left;
+  width: 20%;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+#mainblock{
+  float: right;
+  width: 80%;
+  height: 30vh;
+  border: -10vw;
+  box-sizing: border-box;
+}
+
+
+.user_account{
+  padding-top: 1vw;
+  text-align: center;
+  background-color: #DEDEDE;
+}
+
+.user_account img{
+  width: 8vw;
+  border-radius: 50%;
+}
+
+
+.user_account div a {
+  text-decoration: none;
+  margin-top: 1vw;
+  font-family: 'Koulen', cursive;
+  font-weight: bolder;
+  
+  
+}
+
+.user_account button{
+  background-color: #E07676;
+  border-radius: 5%;
+  border: #E07676;
+  padding: 0.5vw;
+  margin-top: 1vw;
+}
+
+.user_account nav {
+  margin-top: 3vh;
+
+}
+
+.title {
+  padding-top: 1vw;
+  padding-left: 1vw;
+}
+
+.title img {
+  width: 18vw;
+  padding-left: 3vw;
+  margin-bottom: 2vh;
+}
+
+.title nav {
+  justify-self: start;
+}
+
+.title nav a {
+  text-decoration: none;
+  text-align: center;
+  margin: 0 8vw;
+  font-size: 20;
+  border-radius: 10%;
+  padding: 3px 20px;
+}
+
+//title button
+
+
+.button_project{
+  background-color: #B6A7EA;
+  border: #B6A7EA solid 1px;
+}
+
+.button_timer{
+  background-color: #E5A88B;
+  border: #E5A88B solid 1px;
+}
+
+.button_music{
+  background-color: #A6EDE5;
+  border: #A6EDE5 solid 1px;
+}
+
+
+.list_name {
+  background-color: #DEDEDE;
+  text-align: center;
+}
+
+.list_name nav div a{
+  text-decoration: none;
+}
+
+.burger{
+  display: none;
+}

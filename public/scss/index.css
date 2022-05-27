@@ -1,0 +1,750 @@
+html,body{
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+div::-webkit-scrollbar{
+	width: 0;
+}
+@media (max-width: 999px) {
+	.PCbox{
+		display: none;
+	}
+	.YDbox{
+		display: block;
+	}
+}
+
+@media (min-width: 1000px) { 
+	.PCbox{
+		display: block;
+	}
+	.YDbox{
+		display: none;
+	}
+}
+.dropdown-menu li{
+	text-align: center;
+}
+/* ******************************************PC端样式****************************************** */
+.PCbox{
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+	/* border: 1px solid red; */
+}
+.leftBox{
+	height: 100%;
+	padding: 0px;
+	background: #DEDEDE;
+	/* border: 1px solid blue; */
+}
+.user{
+	height: 30%;
+	text-align: center;
+	border-bottom: 2px solid #C1C1C1;
+	/* border: 1px solid #F26C74; */
+}
+.touxiang{
+	margin-top: 1rem;
+	width: 10rem;
+}
+.name{
+	margin-top: 1rem;
+}
+.logout{
+	font-size: 1rem;
+	color: #fff;
+	background: #F26C74;
+	padding: 3px 13px 5px 13px;
+	border-radius: 3px;
+}
+.leftTable{
+	height: 70%;
+	overflow-y: scroll;
+	padding-bottom: 30px;
+	padding: 0px;
+	/* border: 1px solid darkblue; */
+}
+.leftTable td{
+	border-bottom: 1px solid #C1C1C1;
+}
+.rightBox{
+	height: 100%;
+	padding: 0px;
+	/* border: 1px solid firebrick; */
+}
+.topBox{
+	position: relative;
+	height: 30%;
+	padding: 0px;
+	border-bottom: 2px solid #C1C1C1;
+}
+.logo{
+	z-index: 99;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	padding: 200px 500px 200px 500px;
+	background: #fff;
+	animation-name: pclogdh;/*动画名称*/
+	animation-duration: 0.5s;/*动画完成一个周期所花费的秒*/
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	animation-play-state: paused;
+}
+
+@keyframes pclogdh{
+	from{
+		z-index: 99;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+		padding: 200px 500px 200px 500px;
+		background: #fff;
+	}
+	to{
+		z-index: 99;
+		position: absolute;
+		width: 200px;
+		height: auto;
+		left: 25px;
+		top: 20px;
+		padding: 0px 0px 0px 0px;
+		background: #fff;
+	}
+}
+.selectBox{
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	/* padding: 0px; */
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	justify-content: space-around;
+	padding-left: 5%;
+	padding-right: 5%;
+	/* border: 1px  solid firebrick; */
+}
+.selectBtn{
+	width: 200px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: 0px;
+	font-weight: 700;
+	border-radius: 5px 5px 0px 0px;
+	/* border: 1px solid chartreuse; */
+}
+.selectBox ul{
+	width: 200px;
+	padding: 0px;
+	/* border:1px solid red; */
+}
+.selectBox ul li{
+	/* border:1px solid red; */
+}
+.selectBox ul li a{
+	text-align: center;
+	/* border:1px solid green; */
+}
+.bottomBox{
+	width: 100%;
+	height: 70%;
+	overflow-y: scroll;
+	padding: 0px;
+	margin: 0px;
+	/* border: 1px solid saddlebrown; */
+}
+.userinfo{
+	display: none;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	/* border: 1px solid red; */
+}
+.userinfo .touxiang{
+	margin-top: 30px;
+	margin-bottom: 40px;
+	width: 130px;
+}
+.userinfo .row{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 10px;
+	/* border: 1px solid gold; */
+}
+.userinfo .row img{
+	margin-right: 30px;
+	width: 30px;
+	height: 30px;
+	padding: 3px;
+	border: 1px solid #BDCAD4;
+}
+.userinfo .row span{
+	width: 260px;
+	text-align: left;
+	color: #838383;
+	/* border: 1px solid darkred; */
+}
+.dailyTodo{
+	display: none;
+	width: 100%;
+	height: 100%;
+	/* border: 1px solid red; */
+}
+.project{
+	display: none;
+	width: 100%;
+	height: 100%;
+	padding-bottom: 30px;
+	/* border: 1px solid red; */
+}
+.project td{
+	width: 25%;
+}
+.Timer{
+	display: none;
+	width: 100%;
+	height: 100%;
+	/* border: 1px solid red; */
+}
+.Timer .timerWarp{
+	position: relative;
+	width: 100%;
+	height: 300px;
+	background: #DEDEDE;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+.Timer .timerWarp .setWarp{
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	margin: 0 auto;
+	width: 75%;
+	height: 100%;
+}
+.Timer .timerWarp .setWarp .box{
+	width: 100%;
+	height: 100%;
+	background: #DEDEDE;
+	border: 1px solid #B6B6B6;
+	border-radius: 20px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.Timer .timerWarp .row{
+	white-space: nowrap;
+	margin-top: 20px;
+	width: 300px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+}
+.Timer .btn{
+	width: 80px;height: 80px;
+	border-radius: 50%;background: #8CE69C;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	box-shadow: 2px 2px 2px #888888;
+}
+.timerMiniBox{
+	z-index: 100;
+	position: fixed;
+	top: 10px;
+	right: 400px;
+	background: #D9D9D9;
+	border-radius: 15px;
+	padding: 0px 40px 10px 40px;
+}
+.timerMiniBox img{
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	float: right;
+	width: 30px;
+	/* margin: 10px 10px 0px 0px; */
+}
+.timerMiniBox h1{
+	width: 100%;
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 80px;
+	/* border: 1px solid red; */
+}
+.MusicPlayer{
+	display: none;
+	width: 100%;
+	height: 100%;
+	/* border: 1px solid blue; */
+}
+.MusicPlayer .audioBox{
+	display: block;
+	margin-top: 80px;
+	width: 600px;
+	background: #DEDEDE;
+	border-radius: 20px;
+	border: 2px solid #BFBFBF;
+}
+.MusicPlayer .audioBox .box{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+.MusicPlayer .audioBox .shrink{
+	width: 35px;
+	margin: 15px;
+}
+.MusicPlayer .audioBox .center{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	padding: 0px 20px 0px 20px;
+}
+.MusicPlayer .audioBox .center .next{
+	width: 50px;
+}
+.MusicPlayer .audioBox .center .circle{
+	width: 150px;
+	height: 150px;
+	border: 20px solid #040404;
+	animation: circle 5s linear infinite;
+}
+@keyframes circle {
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+.MusicPlayer .audioBox .name{
+	width: 100%;
+	color: #828081;
+}
+.MusicPlayer .audioBox .bottom{
+	width: 100%;
+	height: 80px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	border-top: 2px solid #BFBFBF;
+}
+.MusicPlayer .audioBox .bottom img{
+	width: 40px;
+}
+.audioMiniBox{
+	z-index: 100;
+	display: none;
+	position: fixed;
+	top: 40px;
+	right: 70px;
+}
+.audioMiniBox .box{
+	padding: 0px 15px 0px 15px;
+	background: #DEDEDE;
+	border-radius: 15px;
+	border: 2px solid #BFBFBF;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+.audioMiniBox .name{
+	width: 100px;
+	white-space: nowrap;
+	overflow: hidden;
+	margin: 10px 20px 10px 20px;
+	color: #828081;
+	/* border: 1px solid red; */
+}
+.audioMiniBox .next{
+	width: 20px;
+}
+/* ******************************************移动端样式****************************************** */
+.YDbox{
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+	padding-top: 9rem;
+	padding-bottom: 9rem;
+	overflow-y: scroll;
+	/* border: 1px solid red; */
+}
+/* .YDbox .logo:hover{
+	animation-play-state: running;
+} */
+.YDbox .logo{
+	z-index: 99;
+	position: fixed;
+	top: 0rem;
+	left: 0rem;
+	width: 100%;
+	height: 100%;
+	padding: 0rem 6rem 0rem 6rem;
+	display: flex;
+	background: #fff;
+	align-items: center;
+	justify-content: center;
+	/* border: 1px solid blueviolet; */
+	animation-name: logdh;/*动画名称*/
+	animation-duration: 0.5s;/*动画完成一个周期所花费的秒*/
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	animation-play-state: paused;
+}
+.YDbox img{
+	width: 100%;
+}
+@keyframes logdh{
+	from{
+		top: 0rem;
+		left: 0rem;
+		width: 100%;
+		height: 100%;
+		padding: 0rem 6rem 0rem 6rem;
+	}
+	to{
+		top: 1rem;
+		left: 26%;
+		width: 22rem;
+		height: 7.1rem;
+		padding: 0rem 5rem 0rem 5rem;
+		background: none;
+	}
+}
+.YDbox .topBox{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 8.9rem;
+	background: #fff;
+	border-bottom: 0.1625rem solid #6C6C6C;
+	/* border: 1px solid green; */
+}
+.YDbox .topBox .dropdown{
+	margin-top: 2.8rem;
+	float: right;
+	text-align: right;
+	/* border: 1px solid blueviolet; */
+}
+.YDbox .topBox .menuicon{
+	margin-right: 1.8rem;
+	font-size: 2.25rem;
+	color: #81AFFB;
+	text-align: center;
+}
+.YDbox .bottomBox{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	overflow: visible;
+	width: 100%;
+	height: 8.8rem;
+	background: #E1E1E1;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	/* border: 1px solid yellow; */
+}
+.YDbox .bottomBox .img{
+	padding: 0.9125rem;
+	border: solid 0.5125rem;
+	border-radius: 50%;
+	background: #fff;
+}
+.YDbox .bottomBox .img img{
+	width: 3rem;
+	height: 3rem;
+	background: #fff;
+}
+.YDbox .contentBox{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* border: 1px solid yellowgreen; */
+}
+.YDbox .contentBox .list1{
+	display: none;
+	width: 100%;
+	/* border: 1px solid saddlebrown; */
+}
+.YDbox .contentBox .list2{
+	display: none;
+	width: 100%;
+	/* border: 1px solid saddlebrown; */
+}
+.YDbox .contentBox .list2 .tab{
+	width: 100%;
+	background: #E1E1E1;
+}
+.YDbox .contentBox .list2 .tabHead{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+.YDbox .contentBox .list2 .tabHead span{
+	width: 25%;
+	text-align: center;
+	font-size: 0.4rem;
+	/* border: 1px solid firebrick; */
+}
+.YDbox .contentBox .list2 .tab table{
+	width: 100%;
+	/* border: 1px solid darkblue; */
+}
+.YDbox .contentBox .list2 .tab table td{
+	width: 25%;
+	text-align: center;
+	font-size: 0.1rem;
+	word-break: break-all;
+	word-wrap: break-word;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.YDbox .contentBox .timer{
+	display: none;
+	width: 100%;
+	position: relative;
+	/* border: 1px solid red; */
+}
+.YDbox .contentBox .timer h2{
+	margin-top: 2.5rem;
+}
+.YDbox .contentBox .timer .timeWarp{
+	margin-top: 2.5rem;
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: space-between;
+	background: #E1E1E1;
+	border-radius: 1.25rem;
+	padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+}
+.YDbox .contentBox .timer .timeWarp .img1{
+	float: right;
+	width: 3rem;
+}
+.YDbox .contentBox .timer .timeWarp h1{
+	width: 100%;
+	font-size: 6rem;
+	font-weight: bold;
+	text-align: center;
+}
+.YDbox .contentBox .timer .timeWarp .img2{
+	float: right;
+	width: 4rem;
+	height: 4rem;
+	background: #fff;
+	padding: 0.8rem;
+	border-radius: 50%;
+}
+.YDbox .contentBox .timer .btnBox{
+	margin-top: 1.875rem;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	/* border: 1px solid darkblue; */
+}
+.YDbox .contentBox .timer .btnBox div{
+	width: 6rem;
+	height: 6rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	border-radius: 50%;
+}
+.YDbox .contentBox .timer .setWarp{
+	padding-top: 2rem;
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	margin: 0 auto;
+	/* width: 100%; */
+	/* height: 100%; */
+	/* border: 1px solid red; */
+}
+.YDbox .contentBox .timer .setWarp .box{
+	padding-bottom: 1.25rem;
+	width: 100%;
+	height: 100%;
+	background: #DEDEDE;
+	border: 1px solid #B6B6B6;
+	border-radius: 1.2rem;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.YDbox .contentBox .timer .row{
+	margin-top: 0.7rem;
+	/* width: 18.75rem; */
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+
+
+.YDbox .contentBox .music{
+	display: none;
+	width: 100%;
+	/* border: 1px solid red; */
+}
+.YDbox .contentBox .music .musicWarp{
+	z-index: 99;
+	/* transform: rotate(0deg); */
+	margin-top: 3.125rem;
+	position: relative;
+	background: #E1E1E1;
+	border-radius: 1.25rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 4rem 0rem 2rem 0rem;
+	animation-name: ydmusicfang;/*动画名称*/
+	animation-duration: 0.5s;/*动画完成一个周期所花费的秒*/
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	animation-play-state: paused;
+}
+@keyframes ydmusicfang{
+	0%{
+		transform: rotate(0deg);
+		margin-top: 3.125rem;
+		position: relative;
+		background: #E1E1E1;
+		border-radius: 1.25rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 4rem 0rem 2rem 0rem;
+	}
+	50%{
+		transform: rotate(90deg);
+		margin-top: 3.125rem;
+		position: relative;
+		background: #E1E1E1;
+		border-radius: 1.25rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 4rem 0rem 2rem 0rem;
+	}
+	100%{
+		transform: rotate(90deg);
+		margin-top: 0rem;
+		position: fixed;
+		top: 0rem;
+		left: 0rem;
+		width: 100%;
+		height: 100%;
+		background: #E1E1E1;
+		border-radius: 0rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 4rem 0rem 2rem 0rem;
+	}
+}
+.YDbox .contentBox .music .musicWarp .fang{
+	position: absolute;
+	top: 1.5rem;
+	right: 1.5rem;
+	width: 2rem;
+}
+.YDbox .contentBox .music .musicWarp .box1{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	/* border: 1px solid saddlebrown; */
+}
+.YDbox .contentBox .music .musicWarp .box1 .next{
+	width: 4rem;
+}
+.YDbox .contentBox .music .musicWarp .box1 .yuan{
+	width: 12rem;
+	height: 12rem;
+	border-radius: 50%;
+	border: 2rem solid #040404;
+	animation: circle 5s linear infinite;
+}
+.YDbox .contentBox .music .musicWarp h4{
+	width: 100%;
+	text-align: center;
+}
+.YDbox .contentBox .music .musicWarp .box2{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	padding-top: 1rem;
+	border-top: 0.2rem solid #B6B6B6;
+}
+.YDbox .contentBox .music .musicWarp .box2 .add{
+	width: 3rem;
+}
+.YDbox .contentBox .music .musicWarp .box2 .play{
+	width: 3rem;
+}
+.YDbox .contentBox .userinfo{
+	display: block;
+	width: 100%;
+	/* border: 1px solid red; */
+}
+.YDbox .contentBox .userinfo .box{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.YDbox .contentBox .userinfo .box .tx{
+	margin: 2.5rem;
+	width: 8rem;
+	height: 8rem;
+	border-radius: 50%;
+}
+.YDbox .contentBox .userinfo .box .row{
+	/* border: 1px solid darkblue; */
+	color: red;
+}
