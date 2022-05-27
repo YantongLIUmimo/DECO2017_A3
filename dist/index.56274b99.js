@@ -4,6 +4,7 @@
  * Licensed under the MIT license
  */ if ("undefined" == typeof jQuery) throw new Error("Bootstrap's JavaScript requires jQuery");
 !function(t) {
+    "use strict";
     var e = jQuery.fn.jquery.split(" ")[0].split(".");
     if (e[0] < 2 && e[1] < 9 || 1 == e[0] && 9 == e[1] && e[2] < 1 || 3 < e[0]) throw new Error("Bootstrap's JavaScript requires jQuery version 1.9.1 or higher, but lower than version 4");
 }(), function(n) {

@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "parcel build ./public/index.html",
-	"prestart": "parcel build ./public/index.html",
+    "prestart": "parcel build ./public/index.html",
     "dev": "parcel serve ./public/index.html --no-cache",
     "start": "node server.js"
   },
@@ -26,7 +26,7 @@
   "devDependencies": {
     "@parcel/transformer-sass": "^2.5.0",
     "autoprefixer": "^10.4.7",
-    "parcel": "^2.5.0",
+    "parcel": "^2.6.0",
     "postcss": "^8.4.13",
     "sass": "^1.51.0"
   },
@@ -36,5 +36,3 @@
   },
   "keywords": []
 }
-
-
