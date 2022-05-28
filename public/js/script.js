@@ -1,4 +1,4 @@
-// project列表数组
+// Detaile of project
 var projectAry=[
 	{
 		tabbleName:'DECO  2017  A2  Due  date4.15',
@@ -89,7 +89,7 @@ var projectAry=[
 		],
 	},
 ];
-// 点击头像显示个人信息
+// Click on the avatar to go to the user information page
 function pctxTap(){
 	document.getElementById('pcuserinfo').style.display = 'block';
 	document.getElementById('pcdailyTodo').style.display = 'none';
@@ -100,7 +100,7 @@ function pctxTap(){
 	document.getElementById('pcleftdailyTodo').style.display = 'none';
 	document.getElementById('pcleftproject').style.display = 'none';
 }
-// pc端点击Logo执行缩小动画以及显示个人信息
+// PC: Click on the logo to perform a zoom animation and display user information
 function pclogoTap(){
 	// animation-play-state: running;
 	document.getElementById('pclogo').style.animationPlayState = 'running';
@@ -114,7 +114,7 @@ function pclogoTap(){
 	document.getElementById('pcleftdailyTodo').style.display = 'none';
 	document.getElementById('pcleftproject').style.display = 'none';
 }
-// pc端点击DailyTodo显示DailyTodo列表，隐藏其他内容
+// PC: Click on DailyTodo to display the DailyTodo list and hide the rest of the content
 function pcDailyTodoTap(){
 	document.getElementById('pcuserinfo').style.display = 'none';
 	document.getElementById('pcdailyTodo').style.display = 'block';
@@ -125,7 +125,7 @@ function pcDailyTodoTap(){
 	document.getElementById('pcleftdailyTodo').style.display = 'block';
 	document.getElementById('pcleftproject').style.display = 'none';
 };
-// pc端点击Project显示Project列表，隐藏其他内容
+// PC: Click on Project to display the Project list and hide the rest of the content
 function pcProjectTap(){
 	document.getElementById('pcuserinfo').style.display = 'none';
 	document.getElementById('pcdailyTodo').style.display = 'none';
@@ -136,8 +136,8 @@ function pcProjectTap(){
 	document.getElementById('pcleftdailyTodo').style.display = 'none';
 	document.getElementById('pcleftproject').style.display = 'block';
 };
-// pc端点击时钟菜单显示对应的闹钟模块
-var currentTimer = "Stopwatch";//当前显示的闹钟变量
+// PC: Click on the clock menu to display the difference module of clock
+var currentTimer = "Stopwatch";//Currently displayed variable of clock
 function pcTimerMenuTap(state){
 	if(state == '1'){
 		document.getElementById('pcTimer').getElementsByTagName('h3')[0].innerHTML = 'Countdown';
@@ -176,15 +176,15 @@ function pcTimerMenuTap(state){
 	StopwatchInterval = null;
 	clearInterval(PomodoroInterval);
 	PomodoroInterval = null;
-	countdownseconds = 0;//countdown时钟当前的秒数默认为0
-	stopwatchseconds = 0;//stopwatch时钟当前的秒数默认为0
-	pomodoroseconds = 0;//pomodoro时钟当前的秒数默认为0(工作)
-	pomodoroseconds1 = 0;//pomodoro时钟当前的秒数默认为0(休息)
-	pomodoroseconds_record = 0;//pomodoro时钟当前的秒数默认为0(工作),(记录上一次的值)
-	pomodoroseconds1_record = 0;//pomodoro时钟当前的秒数默认为0(休息),(记录上一次的值)
-	pomodoroCount = 0;//pomodoro时钟当前的秒数默认为0(次数)
+	countdownseconds = 0;//countdown: The current number of seconds defaults to 0
+	stopwatchseconds = 0;//stopwatch: The current number of seconds defaults to 0
+	pomodoroseconds = 0;//pomodoro: The current number of seconds defaults to 0 (Work)
+	pomodoroseconds1 = 0;//pomodoro: The current number of seconds defaults to 0 (Rest)
+	pomodoroseconds_record = 0;//pomodoro: The current number of seconds defaults to 0 （Work),(Record the last value)
+	pomodoroseconds1_record = 0;//pomodoro: The current number of seconds defaults to 0 (Rest),(Record the last value)
+	pomodoroCount = 0;//pomodoro: The current number of seconds defaults to 0 (Times)
 }
-// pc端点击音乐菜单，显示音乐模块并隐藏其他模块
+// PC: Click on the Music player to show the Music module and hide the other modules
 function pcMusicMenuTap(){
 	document.getElementById('pcuserinfo').style.display = 'none';
 	document.getElementById('pcdailyTodo').style.display = 'none';
@@ -196,13 +196,13 @@ function pcMusicMenuTap(){
 	document.getElementById('pcleftproject').style.display = 'none';
 	document.getElementById('pcleftmusic').style.display = 'block';
 }
-// pc端时钟点击缩小缩小时钟到悬浮
+// PC: Click on the Timer section to shrink the timer to the hover window
 function pctimesuoTap(){
 	document.getElementById('pctimerMiniBox').style.display = 'block';
 	document.getElementById('pcTimer').style.display = 'none';
 	document.getElementById('pcuserinfo').style.display = 'block';
 }
-// pc端时钟点击设置时间显示设置模块
+// PC: TIMER-Click setting time display setting module
 function pcsettimerTap(){
 	if(document.getElementById('pcSetTimer').style.display == 'block'){
 		document.getElementById('pcSetTimer').style.display = 'none';
@@ -210,14 +210,14 @@ function pcsettimerTap(){
 		document.getElementById('pcSetTimer').style.display = 'block';
 	}
 }
-var countdownseconds = 0;//countdown时钟当前的秒数默认为0
-var stopwatchseconds = 0;//stopwatch时钟当前的秒数默认为0
-var pomodoroseconds = 0;//pomodoro时钟当前的秒数默认为0(工作)
-var pomodoroseconds1 = 0;//pomodoro时钟当前的秒数默认为0(休息)
-var pomodoroseconds_record = 0;//pomodoro时钟当前的秒数默认为0(工作),(记录上一次的值)
-var pomodoroseconds1_record = 0;//pomodoro时钟当前的秒数默认为0(休息),(记录上一次的值)
-var pomodoroCount = 0;//pomodoro时钟当前的秒数默认为0(次数)
-// 时间转换的方方
+var countdownseconds = 0;//countdown: The current number of seconds defaults to 0
+var stopwatchseconds = 0;//stopwatch: The current number of seconds defaults to 0
+var pomodoroseconds = 0;//pomodoro: The current number of seconds defaults to 0 (Work)
+var pomodoroseconds1 = 0;//pomodoro: The current number of seconds defaults to 0 (Rest)
+var pomodoroseconds_record = 0;//pomodoro: The current number of seconds defaults to 0 （Work),(Record the last value)
+var pomodoroseconds1_record = 0;//pomodoro: The current number of seconds defaults to 0 (Rest),(Record the last value)
+var pomodoroCount = 0;//pomodoro: The current number of seconds defaults to 0 (Times)
+// Methods of time shifting
 function getTime(time) {
 	// 转换为式分秒
 	let h = parseInt(time / 60 / 60 % 24)
@@ -301,11 +301,6 @@ function pctimerstart(){
 			if(pomodoroCount<1){
 				return;
 			}else{
-				// var pomodoroseconds = 0;//pomodoro时钟当前的秒数默认为0(工作)
-				// var pomodoroseconds1 = 0;//pomodoro时钟当前的秒数默认为0(休息)
-				// var pomodoroseconds_record = 0;//pomodoro时钟当前的秒数默认为0(工作),(记录上一次的值)
-				// var pomodoroseconds1_record = 0;//pomodoro时钟当前的秒数默认为0(休息),(记录上一次的值)
-				// var pomodoroCount = 0;//pomodoro时钟当前的秒数默认为0(次数)
 				PomodoroInterval = setInterval(function(){
 					if(pomodoroCount > 0){
 						if(pomodoroseconds > 0){
