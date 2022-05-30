@@ -126,7 +126,7 @@
 				<div id="pcdailyTodo" class="dailyTodo" style="display: none;position:relative;" >
 					
 				</div>
-				<!-- To-do添加按钮 -->
+				<!-- Add Item button of Daily To-do -->
 				<span id="todoaddbtn" data-toggle="modal" data-target="#pctodomodal" class="glyphicon glyphicon-plus-sign" 
 					style="font-size:60px;color:#7d7d7d;z-index:109;position:fixed;right:2.2rem;top: 45rem;display:none;" >
 				</span>
@@ -135,7 +135,7 @@
 				<div id="pcproject" class="project" style="display: none;" >
 					
 				</div>
-				<!-- Project添加按钮 -->
+				<!-- Add Item button of Project -->
 				<span id="projectaddbtn" data-toggle="modal" data-target="#pcprojectmodal" class="glyphicon glyphicon-plus-sign" 
 					style="font-size:60px;color:#7d7d7d;z-index:109;position:fixed;right:2.2rem;top: 45rem;display:none;" >
 				</span>
@@ -256,13 +256,9 @@
 		<!-- Mobile content -->
 		<div class="contentBox container-fluid" >
 			<!-- list1 -->
-			<div id="ydDailytodo" class="list1" style="display: none;" >
-				
-			</div>
+			<div id="ydDailytodo" class="list1" style="display: none;" ></div>
 			<!-- list2 -->
-			<div id="ydProject" class="list2" style="display: none;" >
-				
-			</div>
+			<div id="ydProject" class="list2" style="display: none;" ></div>
 			<!-- Mobile Timer -->
 			<div id="ydTimer" class="timer" style="" style="display: none;" >
 				<h3>Stopwatch</h3>
@@ -271,12 +267,13 @@
 					<h1 id="timernumber2" >00:00:00</h1>
 					<img onclick="ydsettimerTap()" class="img2" src="./image/shezhi.png" class="img-responsive" alt="">
 				</div>
+				<!-- Button to control the Timer -->
 				<div class="btnBox" >
 					<div onclick="pctimerstart()" style="background: #8CE69C;" >START</div>
 					<div onclick="pctimerstop()" style="background: #F06F73;" >STOP</div>
 					<div onclick="pctimerreset()" style="background: #EFA586;" >RESET</div>
 				</div>
-
+				<!-- Timer setting page -->
 				<div id="ydSetTimer" class="setWarp" style="display: none;" >
 					<div class="box" >
 						<h4>Edit  Timer</h4>
@@ -354,7 +351,7 @@
 				</div>
 			</div>
 		</div>
-		<!-- Mobile bottom -->
+		<!-- Mobile main button in the bottom-->
 		<div class="bottomBox" style="overflow: visible;" >
 			<div class="dropdown dropup" style="">
 				<div class="img dropdown-toggle" style="border-color: #F0A684;" id="tabBar1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" >
@@ -389,8 +386,8 @@
 
 	</div>
 	
-	<!-- 弹窗 -->
-	<!-- 添加todo -->
+	<!-- Pop-up window -->
+	<!-- Add button with todo -->
 	<div id="pctodomodal" class="modal fade" tabindex="-1" role="dialog"  >
 		<div class="modal-dialog" role="document" style="margin-top: 25rem;" >
 			<div class="modal-content">
@@ -415,7 +412,8 @@
 			</div><!-- /.modal-content -->
 		</div><!-- /.modal-dialog -->
 	</div><!-- /.modal -->
-	<!-- 添加todo的table项 -->
+
+	<!-- Add a new table with todo -->
 	<div id="pctodotabmodal" class="modal fade" tabindex="-1" role="dialog"  >
 		<div class="modal-dialog" role="document" style="margin-top: 25rem;" >
 			<div class="modal-content">
@@ -437,8 +435,7 @@
 		</div><!-- /.modal-dialog -->
 	</div><!-- /.modal -->
 	
-	
-	<!-- 添加project -->
+	<!-- Add button with project -->
 	<div id="pcprojectmodal" class="modal fade" tabindex="-1" role="dialog"  >
 		<div class="modal-dialog" role="document" style="margin-top: 25rem;" >
 			<div class="modal-content">
@@ -463,7 +460,8 @@
 			</div><!-- /.modal-content -->
 		</div><!-- /.modal-dialog -->
 	</div><!-- /.modal -->
-	<!-- 添加project的table项 -->
+
+	<!-- Add a new table with project -->
 	<div id="pcprojecttabmodal" class="modal fade" tabindex="-1" role="dialog"  >
 		<div class="modal-dialog" role="document" style="margin-top: 25rem;" >
 			<div class="modal-content">
@@ -483,10 +481,10 @@
 					<div class="form-group">
 						<label for="exampleInputName2">PROGRESS</label>
 						<select id="pcprojectprogress" class="form-control">
-							<option>gray</option>
-							<option>green</option>
-							<option>yellow</option>
-							<option>red</option>
+							<option>Not started</option>
+							<option>Complete</option>
+							<option>Processing</option>
+							<option>Overdue</option>
 						</select>
 					</div>
 					<div class="form-group">
@@ -505,7 +503,8 @@
 			</div><!-- /.modal-content -->
 		</div><!-- /.modal-dialog -->
 	</div><!-- /.modal -->
-	<!-- 添加project的table项的颜色状态修改 -->
+
+	<!-- Add a colour status change to the table item of a project -->
 	<div id="pcprojecttabprogressmodal" class="modal fade" tabindex="-1" role="dialog"  >
 		<div class="modal-dialog" role="document" style="margin-top: 25rem;" >
 			<div class="modal-content">
@@ -517,10 +516,10 @@
 					<div class="form-group">
 						<label for="exampleInputName2">PROGRESS</label>
 						<select id="pcprojectprogressamend" class="form-control">
-							<option>gray</option>
-							<option>green</option>
-							<option>yellow</option>
-							<option>red</option>
+							<option>Not started</option>
+							<option>Complete</option>
+							<option>Processing</option>
+							<option>Overdue</option>
 						</select>
 					</div>
 				</div>
@@ -531,7 +530,8 @@
 			</div><!-- /.modal-content -->
 		</div><!-- /.modal-dialog -->
 	</div><!-- /.modal -->
-	<!-- 添加project的table项的文件类型修改 -->
+
+	<!-- Add a file type change to project's table item -->
 	<div id="pcprojecttabfilesmodal" class="modal fade" tabindex="-1" role="dialog"  >
 		<div class="modal-dialog" role="document" style="margin-top: 25rem;" >
 			<div class="modal-content">
@@ -556,11 +556,7 @@
 			</div><!-- /.modal-content -->
 		</div><!-- /.modal-dialog -->
 	</div><!-- /.modal -->
-	
-	
-	
 </body>
 </html>
 <script src="http://localhost:1234/js/script.js" ></script>
 <!-- <script src="./js/script.js"></script> -->
-

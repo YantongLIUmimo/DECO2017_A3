@@ -1,89 +1,117 @@
-// project列表数组
+// Detaile of project
 var projectAry=[
 	{
 		tabbleName:'DECO  2017  A2  Due  date4.15',
 		color:'#B398F8',
 		ary:[
 			{
-				name:'One',
-				date:'4.08-4.08',
-				progress:'gray',//gray,green,yellow,red
-				progressColor:'#6C6C6C',//#6C6C6C,#8AE3A3,#E5E2A1,#CC5F6F
+				name:'Background research',
+				date:'4.08-4.09',
+				progress:'Complete',//Not Started, Complete, Processing, Overdue
+				progressColor:'#8AE3A3',//#6C6C6C,#8AE3A3,#E5E2A1,#CC5F6F
 				files:'link',//link,img,file
 			},
 			{
-				name:'Two',
-				date:'4.08-4.08',
-				progress:'green',//gray,green,yellow,red
+				name:'Synthesis',
+				date:'4.08-4.09',
+				progress:'Complete',//Not Started, Complete, Processing, Overdue
 				progressColor:'#8AE3A3',//#6C6C6C,#8AE3A3,#E5E2A1,#CC5F6F
 				files:'img',//link,img,file
 			},
 			{
-				name:'Three',
-				date:'4.08-4.08',
-				progress:'green',//gray,green,yellow,red
-				progressColor:'#8AE3A3',//#6C6C6C,#8AE3A3,#E5E2A1,#CC5F6F
+				name:'Design & Iteration ',
+				date:'4.10-4.12',
+				progress:'Processing',//Not Started, Complete, Processing, Overdue
+				progressColor:'#E5E2A1',//#6C6C6C,#8AE3A3,#E5E2A1,#CC5F6F
 				files:'file',//link,img,file
 			},
 			{
-				name:'Four',
-				date:'4.08-4.08',
-				progress:'yellow',//gray,green,yellow,red
+				name:'Development',
+				date:'4.13-4.14',
+				progress:'Not Started',//Not Started, Complete, Processing, Overdue
+				progressColor:'#6C6C6C',//#6C6C6C,#8AE3A3,#E5E2A1,#CC5F6F
+				files:'link',//link,img,file
+			},
+			{
+				name:'Pre & video',
+				date:'4.13-4.14',
+				progress:'Not Started',//Not Started, Complete, Processing, Overdue
+				progressColor:'#6C6C6C',//#6C6C6C,#8AE3A3,#E5E2A1,#CC5F6F
+				files:'link',//link,img,file
+			},
+		],
+	},
+	{
+		tabbleName:'OLET  1504  M3  Due  date4.15',
+		color:'#81AFFF',
+		ary:[
+			{
+				name:'Research',
+				date:'4.12-4.13',
+				progress:'Processing',//Not Started, Complete, Processing, Overdue
 				progressColor:'#E5E2A1',//#6C6C6C,#8AE3A3,#E5E2A1,#CC5F6F
 				files:'link',//link,img,file
 			},
 			{
-				name:'Five',
-				date:'4.08-4.08',
-				progress:'red',//gray,green,yellow,red
-				progressColor:'#CC5F6F',//#6C6C6C,#8AE3A3,#E5E2A1,#CC5F6F
-				files:'link',//link,img,file
-			},
-		],
-	},
-	{
-		tabbleName:'DECO  2017  A2  Due  date4.15',
-		color:'#81AFFF',
-		ary:[
-			{
-				name:'One',
-				date:'4.08-4.08',
-				progress:'gray',//gray,green,yellow,red
+				name:'Pre Speech Draft',
+				date:'4.12-4.13',
+				progress:'Not Started',//Not Started, Complete, Processing, Overdue
 				progressColor:'#6C6C6C',//#6C6C6C,#8AE3A3,#E5E2A1,#CC5F6F
 				files:'link',//link,img,file
 			},
 			{
-				name:'Two',
-				date:'4.08-4.08',
-				progress:'green',//gray,green,yellow,red
-				progressColor:'#8AE3A3',//#6C6C6C,#8AE3A3,#E5E2A1,#CC5F6F
-				files:'link',//link,img,file
-			},
-			{
-				name:'Three',
-				date:'4.08-4.08',
-				progress:'green',//gray,green,yellow,red
-				progressColor:'#8AE3A3',//#6C6C6C,#8AE3A3,#E5E2A1,#CC5F6F
+				name:'Development',
+				date:'4.14-4.15',
+				progress:'Not Started',//Not Started, Complete, Processing, Overdue
+				progressColor:'#6C6C6C',//#6C6C6C,#8AE3A3,#E5E2A1,#CC5F6F
 				files:'link',//link,img,file
 			},
 		],
 	},
 	{
-		tabbleName:'DECO  2017  A2  Due  date4.15',
+		tabbleName:'DECO  2014  A3  Due  date4.26',
 		color:'#F0A684',
 		ary:[
 			{
-				name:'One',
-				date:'4.08-4.08',
-				progress:'gray',//gray,green,yellow,red
+				name:'Research',
+				date:'4.17-4.18',
+				progress:'Not Started',//Not Started, Complete, Processing, Overdue
 				progressColor:'#6C6C6C',//#6C6C6C,#8AE3A3,#E5E2A1,#CC5F6F
 				files:'link',//link,img,file
 			},
 			{
-				name:'Two',
-				date:'4.08-4.08',
-				progress:'green',//gray,green,yellow,red
-				progressColor:'#8AE3A3',//#6C6C6C,#8AE3A3,#E5E2A1,#CC5F6F
+				name:'Concept',
+				date:'4.18-4.19',
+				progress:'Not Started',//Not Started, Complete, Processing, Overdue
+				progressColor:'#6C6C6C',//#6C6C6C,#8AE3A3,#E5E2A1,#CC5F6F
+				files:'link',//link,img,file
+			},
+			{
+				name:'Engaging Vision',
+				date:'4.20-4.21',
+				progress:'Not Started',//Not Started, Complete, Processing, Overdue
+				progressColor:'#6C6C6C',//#6C6C6C,#8AE3A3,#E5E2A1,#CC5F6F
+				files:'link',//link,img,file
+			},
+			{
+				name:'Justification',
+				date:'4.22',
+				progress:'Not Started',//Not Started, Complete, Processing, Overdue
+				progressColor:'#6C6C6C',//#6C6C6C,#8AE3A3,#E5E2A1,#CC5F6F
+				files:'link',//link,img,file
+			},
+			{
+				name:'Development',
+				date:'4.23-4.26',
+				progress:'Not Started',//Not Started, Complete, Processing, Overdue
+				progressColor:'#6C6C6C',//#6C6C6C,#8AE3A3,#E5E2A1,#CC5F6F
+				files:'link',//link,img,file
+			},
+			{
+				name:'Storyboard',
+				date:'4.23-4.26',
+				progress:'Not Started',//Not Started, Complete, Processing, Overdue
+				progressColor:'#6C6C6C',//#6C6C6C,#8AE3A3,#E5E2A1,#CC5F6F
 				files:'link',//link,img,file
 			},
 		],

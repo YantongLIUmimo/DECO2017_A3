@@ -5,38 +5,38 @@ var projectAry=[
 		color:'#B398F8',
 		ary:[
 			{
-				name:'One',
-				date:'4.08-4.08',
-				progress:'gray',//gray,green,yellow,red
-				progressColor:'#6C6C6C',//#6C6C6C,#8AE3A3,#E5E2A1,#CC5F6F
+				name:'Background research',
+				date:'4.08-4.09',
+				progress:'Complete',//Not Started, Complete, Processing, Overdue
+				progressColor:'#8AE3A3',//#6C6C6C,#8AE3A3,#E5E2A1,#CC5F6F
 				files:'link',//link,img,file
 			},
 			{
-				name:'Two',
-				date:'4.08-4.08',
-				progress:'green',//gray,green,yellow,red
+				name:'Synthesis',
+				date:'4.08-4.09',
+				progress:'Complete',//Not Started, Complete, Processing, Overdue
 				progressColor:'#8AE3A3',//#6C6C6C,#8AE3A3,#E5E2A1,#CC5F6F
 				files:'img',//link,img,file
 			},
 			{
-				name:'Three',
-				date:'4.08-4.08',
-				progress:'green',//gray,green,yellow,red
+				name:'Design & Iteration ',
+				date:'4.10-4.12',
+				progress:'green',//Not Started, Complete, Processing, Overdue
 				progressColor:'#8AE3A3',//#6C6C6C,#8AE3A3,#E5E2A1,#CC5F6F
 				files:'file',//link,img,file
 			},
 			{
-				name:'Four',
-				date:'4.08-4.08',
-				progress:'yellow',//gray,green,yellow,red
-				progressColor:'#E5E2A1',//#6C6C6C,#8AE3A3,#E5E2A1,#CC5F6F
+				name:'Development',
+				date:'4.13-4.14',
+				progress:'Not Started',//Not Started, Complete, Processing, Overdue
+				progressColor:'#6C6C6C',//#6C6C6C,#8AE3A3,#E5E2A1,#CC5F6F
 				files:'link',//link,img,file
 			},
 			{
-				name:'Five',
-				date:'4.08-4.08',
-				progress:'red',//gray,green,yellow,red
-				progressColor:'#CC5F6F',//#6C6C6C,#8AE3A3,#E5E2A1,#CC5F6F
+				name:'Pre & video',
+				date:'4.13-4.14',
+				progress:'Not Started',//Not Started, Complete, Processing, Overdue
+				progressColor:'#6C6C6C',//#6C6C6C,#8AE3A3,#E5E2A1,#CC5F6F
 				files:'link',//link,img,file
 			},
 		],
