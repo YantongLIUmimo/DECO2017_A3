@@ -89,6 +89,101 @@ var projectAry=[
 		],
 	},
 ];
+// Todo列表数组
+var todoAry = [
+	{
+		date:'2022.04.07',
+		color: '#BAA2EE',
+		ary:[
+			{
+				check:true,
+				content:'DECO2017 A2',
+			},
+			{
+				check:true,
+				content:'DECO2014 A3',
+			},
+			{
+				check:false,
+				content:'OLET2135 M3',
+			},
+			{
+				check:false,
+				content:'OLET1616 M2',
+			},
+			{
+				check:false,
+				content:'OLET1504 M2',
+			},
+		],
+	},
+	{
+		date:'2022.04.08',
+		color: '#94B7F1',
+		ary:[
+			{
+				check:false,
+				content:'DECO2017 A2',
+			},
+			{
+				check:false,
+				content:'DECO2014 A3',
+			},
+			{
+				check:false,
+				content:'OLET2135 M3',
+			},
+			{
+				check:false,
+				content:'OLET1616 M2',
+			},
+		],
+	},
+	{
+		date:'2022.04.09',
+		color: '#EFA586',
+		ary:[
+			{
+				check:false,
+				content:'DECO2017 A2',
+			},
+			{
+				check:false,
+				content:'DECO2014 A3',
+			},
+			{
+				check:false,
+				content:'OLET2135 M3',
+			},
+			{
+				check:false,
+				content:'OLET1616 M2',
+			},
+			{
+				check:false,
+				content:'OLET1504 M2',
+			},
+		],
+	},
+	{
+		date:'2022.04.10',
+		color: '#8CE69C',
+		ary:[
+			{
+				check:false,
+				content:'DECO2017 A2',
+			},
+			{
+				check:false,
+				content:'DECO2014 A3',
+			},
+			{
+				check:false,
+				content:'OLET2135 M3',
+			},
+		],
+	},
+];
 // 点击头像显示个人信息
 function pctxTap(){
 	document.getElementById('pcuserinfo').style.display = 'block';
@@ -99,6 +194,9 @@ function pctxTap(){
 	document.getElementById('pcleftuserinfo').style.display = 'block';
 	document.getElementById('pcleftdailyTodo').style.display = 'none';
 	document.getElementById('pcleftproject').style.display = 'none';
+	document.getElementById('pcleftmusic').style.display = 'none';
+	document.getElementById('todoaddbtn').style.display = 'none';
+	document.getElementById('projectaddbtn').style.display = 'none';
 }
 // pc端点击Logo执行缩小动画以及显示个人信息
 function pclogoTap(){
@@ -113,6 +211,9 @@ function pclogoTap(){
 	document.getElementById('pcleftuserinfo').style.display = 'block';
 	document.getElementById('pcleftdailyTodo').style.display = 'none';
 	document.getElementById('pcleftproject').style.display = 'none';
+	document.getElementById('pcleftmusic').style.display = 'none';
+	document.getElementById('todoaddbtn').style.display = 'none';
+	document.getElementById('projectaddbtn').style.display = 'none';
 }
 // pc端点击DailyTodo显示DailyTodo列表，隐藏其他内容
 function pcDailyTodoTap(){
@@ -124,6 +225,9 @@ function pcDailyTodoTap(){
 	document.getElementById('pcleftuserinfo').style.display = 'none';
 	document.getElementById('pcleftdailyTodo').style.display = 'block';
 	document.getElementById('pcleftproject').style.display = 'none';
+	document.getElementById('pcleftmusic').style.display = 'none';
+	document.getElementById('todoaddbtn').style.display = 'block';
+	document.getElementById('projectaddbtn').style.display = 'none';
 };
 // pc端点击Project显示Project列表，隐藏其他内容
 function pcProjectTap(){
@@ -135,6 +239,9 @@ function pcProjectTap(){
 	document.getElementById('pcleftuserinfo').style.display = 'none';
 	document.getElementById('pcleftdailyTodo').style.display = 'none';
 	document.getElementById('pcleftproject').style.display = 'block';
+	document.getElementById('pcleftmusic').style.display = 'none';
+	document.getElementById('todoaddbtn').style.display = 'none';
+	document.getElementById('projectaddbtn').style.display = 'block';
 };
 // pc端点击时钟菜单显示对应的闹钟模块
 var currentTimer = "Stopwatch";//当前显示的闹钟变量
@@ -169,6 +276,9 @@ function pcTimerMenuTap(state){
 	document.getElementById('pcleftuserinfo').style.display = 'block';
 	document.getElementById('pcleftdailyTodo').style.display = 'none';
 	document.getElementById('pcleftproject').style.display = 'none';
+	document.getElementById('pcleftmusic').style.display = 'none';
+	document.getElementById('todoaddbtn').style.display = 'none';
+	document.getElementById('projectaddbtn').style.display = 'none';
 	
 	clearInterval(CountdownInterval);
 	CountdownInterval = null;
@@ -195,6 +305,8 @@ function pcMusicMenuTap(){
 	document.getElementById('pcleftdailyTodo').style.display = 'none';
 	document.getElementById('pcleftproject').style.display = 'none';
 	document.getElementById('pcleftmusic').style.display = 'block';
+	document.getElementById('todoaddbtn').style.display = 'none';
+	document.getElementById('projectaddbtn').style.display = 'none';
 }
 // pc端时钟点击缩小缩小时钟到悬浮
 function pctimesuoTap(){
@@ -400,6 +512,8 @@ function ydlogoTap(){
 	console.log('wwww胡');
 	document.getElementById('ydUserinfo').style.display = 'block';
 	document.getElementById('ydlogo').style.animationPlayState = 'running';
+	document.getElementById('todoaddbtn').style.display = 'none';
+	document.getElementById('projectaddbtn').style.display = 'none';
 }
 
 // 移动端点击右边…菜单显示/隐藏的监听事件 做相应的显示隐藏操作，
@@ -479,6 +593,8 @@ function ydtimerTap(state){
 	document.getElementById('ydTimer').style.display = 'block';
 	document.getElementById('ydMusic').style.display = 'none';
 	document.getElementById('ydUserinfo').style.display = 'none';
+	document.getElementById('todoaddbtn').style.display = 'none';
+	document.getElementById('projectaddbtn').style.display = 'none';
 	
 	clearInterval(CountdownInterval);
 	CountdownInterval = null;
@@ -501,6 +617,8 @@ function ydProjectTap(){
 	document.getElementById('ydTimer').style.display = 'none';
 	document.getElementById('ydMusic').style.display = 'none';
 	document.getElementById('ydUserinfo').style.display = 'none';
+	document.getElementById('todoaddbtn').style.display = 'none';
+	document.getElementById('projectaddbtn').style.display = 'block';
 };
 // 移动端点击DailyTodo显示DailyTodo列表
 function ydDailyTodoTap(){
@@ -509,6 +627,8 @@ function ydDailyTodoTap(){
 	document.getElementById('ydTimer').style.display = 'none';
 	document.getElementById('ydMusic').style.display = 'none';
 	document.getElementById('ydUserinfo').style.display = 'none';
+	document.getElementById('todoaddbtn').style.display = 'block';
+	document.getElementById('projectaddbtn').style.display = 'none';
 };
 // 移动端点击音乐显示音乐模块
 function ydMusicTap(){
@@ -517,6 +637,8 @@ function ydMusicTap(){
 	document.getElementById('ydTimer').style.display = 'none';
 	document.getElementById('ydMusic').style.display = 'block';
 	document.getElementById('ydUserinfo').style.display = 'none';
+	document.getElementById('todoaddbtn').style.display = 'none';
+	document.getElementById('projectaddbtn').style.display = 'none';
 };
 // 移动端点击个人信息显示用户信息模块
 function ydUserinfoTap(){
@@ -525,6 +647,8 @@ function ydUserinfoTap(){
 	document.getElementById('ydTimer').style.display = 'none';
 	document.getElementById('ydMusic').style.display = 'none';
 	document.getElementById('ydUserinfo').style.display = 'block';
+	document.getElementById('todoaddbtn').style.display = 'none';
+	document.getElementById('projectaddbtn').style.display = 'none';
 };
 
 // 音乐的相关操作（pc 及 移动端 共用）
@@ -631,105 +755,279 @@ function adZoomTap(val){
 }
 
 // 音乐列表
-myAdAry.forEach(function(item,index){
-	// console.log(item);
-	var tr = document.createElement('tr');
-	tr.innerHTML = `
-		<tr>
-			<td class="text-center" > <h4>${item.name}</h4> </td>
-		</tr>
-	`
-	document.getElementById('pcmusiclist').appendChild(tr);
-});
-
-
-// project列表循环追加元素
-projectAry.forEach(function(item,index){
-	// console.log(item);
-	// pc端project左边列表追加
-	$('#pcleftprojectlist').append(`
-		<tr>
-			<td class="text-center" > <h4>${item.tabbleName}</h4> </td>
-		</tr>
-	`);
-	// pc端右边表格列表追加
-	$('#pcproject').append(`
-		<div class="row" style="margin-top: 30px;" >
-			<div class="col-md-10 col-md-offset-1 text-left" style="padding: 0px;color: ${item.color};" data-toggle="collapse" data-target="#cd${index}" >
-				<span class="glyphicon glyphicon-play"></span>
-				<span>${item.tabbleName}</span>
-			</div>
-			<div id="cd${index}" class="col-lg-10 col-md-offset-1 collapse" style="padding:10px;" >
-				<div style="background: #E6E6E6;padding: 10px 30px 10px 30px;border-radius: 10px;" >
-					<div >
-						<div class="col-md-3" style="" >NAME</div>
-						<div class="col-md-3" style="" >DATE</div>
-						<div class="col-md-3" style="" >PROGRESS</div>
-						<div class="col-md-3" style="" >FILES</div>
-					</div>
-					<table id="pcprojecttab${index}" class="table table-bordered" style="" >
-						
-					</table>
-				</div>
-			</div>
-		</div>
-	`);
-	// 移动端
-	$('#ydProject').append(`
-		<div style="padding: 0.5rem 0rem 0.5rem 0rem;box-sizing: border-box;" >
-			<div data-toggle="collapse" data-target="#ydcollapse${index}${index}" style="color:  ${item.color};" >
-				<span class="glyphicon glyphicon-play" ></span>
-				<span>${item.tabbleName}</span>
-			</div>
-			<div class="collapse in" id="ydcollapse${index}${index}" style="padding: 1.25rem 1.5rem 0rem 1.5rem;" >
-				<div class="tab" style="padding: 0.4rem;border-radius: 1rem;" >
-					<div class="tabHead" >
-						<span>NAME</span>
-						<span>DATE</span>
-						<span>PROGRESS</span>
-						<span>FILES</span>
-					</div>
-					<table id="ydProjectTab${index}" class="table table-bordered" style="position: relative;background: #E1E1E1;border-radius: 1rem;overflow: hidden;" >
-						
-					</table>
-				</div>
-				
-			</div>
-		</div>
-	`);
-	item.ary.forEach(function(item1,index1){
-		// console.log(item1);
-		$(`#pcprojecttab${index}`).append(`
+function musicForeach(){
+	myAdAry.forEach(function(item,index){
+		// console.log(item);
+		$('#pcmusiclist').append(`
 			<tr>
-				<td>${item1.name}</td>
-				<td>${item1.date}</td>
-				<td style="backGround:${item1.progressColor}" >${item1.progress}</td>
-				<td>${item1.files}</td>
+				<td class="text-center" > <h4>${item.name}</h4> </td>
 			</tr>
 		`);
-		$(`#ydProjectTab${index}`).append(`
+	});
+};
+musicForeach();
+
+//project列表 
+function projectForeach(){
+	/**********先清空**********/
+	$('#pcleftprojectlist').empty();
+	$('#pcproject').empty();
+	$('#ydProject').empty();
+	// project列表循环追加元素
+	projectAry.forEach(function(item,index){
+		// console.log(item);
+		// pc端project左边列表追加
+		$('#pcleftprojectlist').append(`
 			<tr>
-				<td>${item1.name}</td>
-				<td>${item1.date}</td>
-				<td style="backGround:${item1.progressColor};" >
-					<span data-toggle="collapse" data-target="#ydcolorselect${index}${index1}" >
+				<td class="text-center" > <h4>${item.tabbleName}</h4> </td>
+			</tr>
+		`);
+		// pc端右边表格列表追加
+		$('#pcproject').append(`
+			<div class="row" style="margin-top: 30px;" >
+				<div class="col-md-10 col-md-offset-1 text-left" style="padding: 0px;color: ${item.color};" data-toggle="collapse" data-target="#cd${index}" >
+					<span class="glyphicon glyphicon-play"></span>
+					<span>${item.tabbleName}</span>
+				</div>
+				<div id="cd${index}" class="col-lg-10 col-md-offset-1 collapse" style="padding:10px;" >
+					<div style="background: #E6E6E6;padding: 10px 30px 10px 30px;border-radius: 10px;" >
+						<div >
+							<div class="col-md-3" style="" >NAME</div>
+							<div class="col-md-3" style="" >DATE</div>
+							<div class="col-md-3" style="" >PROGRESS</div>
+							<div class="col-md-3" style="" >FILES</div>
+						</div>
+						<table id="pcprojecttab${index}" class="table"  >
+							
+						</table>
+						<span data-idx="${index}" data-toggle="modal" data-target="#pcprojecttabmodal" class="glyphicon glyphicon-plus-sign"
+							style="font-size:20px;color:#7d7d7d;" >
+						</span>
+					</div>
+				</div>
+			</div>
+		`);
+		// 移动端
+		$('#ydProject').append(`
+			<div style="padding: 0.5rem 0rem 0.5rem 0rem;box-sizing: border-box;" >
+				<div data-toggle="collapse" data-target="#ydcollapse${index}${index}" style="color:  ${item.color};" >
+					<span class="glyphicon glyphicon-play" ></span>
+					<span>${item.tabbleName}</span>
+				</div>
+				<div class="collapse in" id="ydcollapse${index}${index}" style="padding: 1.25rem 1.5rem 0rem 1.5rem;" >
+					<div class="tab" style="padding: 0.4rem;border-radius: 1rem;" >
+						<div class="tabHead" >
+							<span>NAME</span>
+							<span>DATE</span>
+							<span>PROGRESS</span>
+							<span>FILES</span>
+						</div>
+						<table id="ydProjectTab${index}" class="table table-bordered" style="position: relative;background: #E1E1E1;border-radius: 1rem;overflow: hidden;" >
+							
+						</table>
+					</div>
+					
+				</div>
+			</div>
+		`);
+		item.ary.forEach(function(item1,index1){
+			// console.log(item1);
+			$(`#pcprojecttab${index}`).append(`
+				<tr>
+					<td style="padding: 1rem 0rem 1rem 0rem;border:1px solid #DDDDDD;" >${item1.name}</td>
+					<td style="padding: 1rem 0rem 1rem 0rem;border:1px solid #DDDDDD;" >${item1.date}</td>
+					<td data-idx1="${index}" data-idx2="${index1}" data-toggle="modal" data-target="#pcprojecttabprogressmodal" style="padding: 1rem 0rem 1rem 0rem;border:1px solid #DDDDDD;backGround:${item1.progressColor}" >
 						${item1.progress}
-					</span>
-					<ul id="ydcolorselect${index}${index1}" class="collapse on" style="padding: 0;margin: 0;list-style: none;position: absolute;top:0.6rem;right:4rem;" >
-					  <li onclick="ydcolorselectTap(${index},${index1},'gray')" style="text-algin:center;background:#6C6C6C" >gray</li>
-					  <li onclick="ydcolorselectTap(${index},${index1},'green')" style="text-algin:center;background:#8AE3A3"" >green</li onclick="ydcolorselectTap(${index},${index1},'gray')">
-					  <li onclick="ydcolorselectTap(${index},${index1},'yellow')" style="text-algin:center;background:#E5E2A1"" >yellow</li onclick="ydcolorselectTap(${index},${index1},'gray')">
-					  <li onclick="ydcolorselectTap(${index},${index1},'red')" style="text-algin:center;background:#CC5F6F"" >red</li>
-					</ul>
-				</td>
-				<td>${item1.files}</td>
-			</tr>
-			
-		`);
+					</td>
+					<td data-idx1="${index}" data-idx2="${index1}" data-toggle="modal" data-target="#pcprojecttabfilesmodal" style="padding: 1rem 0rem 1rem 0rem;border:1px solid #DDDDDD;" >${item1.files}</td>
+				</tr>
+			`);
+			$(`#ydProjectTab${index}`).append(`
+				<tr>
+					<td>${item1.name}</td>
+					<td>${item1.date}</td>
+					<td style="backGround:${item1.progressColor};" >
+						${item1.progress}
+					</td>
+					<td>${item1.files}</td>
+				</tr>
+				
+			`);
+		})
 	})
+};
+projectForeach();
+// 添加project项
+function addProjectTap(){
+	var obj = {
+		tabbleName:$('#pcprojecttitle').val(),
+		color:$('#pcprojectcolor').val(),
+		ary:[],
+	};
+	projectAry.push(obj);
+	projectForeach();
+	// console.log(todoAry);
+	$('#pcprojectmodal').modal('hide');
+}
+var project_tab_idx;
+$('#pcprojecttabmodal').on('show.bs.modal', function (event) {
+	project_tab_idx = $(event.relatedTarget).data('idx');
 })
-function ydcolorselectTap(index1,index2,color){
-	console.log(index1,index2,color);
+function addProjectTabTap(){
+	var selectColor = '#6C6C6C';
+	switch ($('#pcprojectprogress').val()){
+		case 'gray':
+			selectColor = '#6C6C6C';
+			break;
+		case 'green':
+			selectColor = '#8AE3A3';
+			break;
+		case 'yellow':
+			selectColor = '#E5E2A1';
+			break;
+		case 'red':
+			selectColor = '#CC5F6F';
+			break;
+		default:
+			selectColor = '#6C6C6C';
+			break;
+	}
+	var obj = {
+		name:$('#pcprojectname').val(),
+		date:$('#pcprojectdate').val(),
+		progress:$('#pcprojectprogress').val(),//gray,green,yellow,red
+		progressColor:selectColor,//#6C6C6C,#8AE3A3,#E5E2A1,#CC5F6F
+		files:$('#pcprojectfiles').val(),//link,img,file
+	};
+	projectAry[project_tab_idx].ary.push(obj);
+	projectForeach();
+	$('#pcprojecttabmodal').modal('hide');
+};
+var project_tab_progress_idx1;
+var project_tab_progress_idx2;
+$('#pcprojecttabprogressmodal').on('show.bs.modal', function (event) {
+	project_tab_progress_idx1 = $(event.relatedTarget).data('idx1');
+	project_tab_progress_idx2 = $(event.relatedTarget).data('idx2');
+})
+function amendProjectTabProgressTap(){
+	var selectColor = '#6C6C6C';
+	switch ($('#pcprojectprogressamend').val()){
+		case 'gray':
+			selectColor = '#6C6C6C';
+			break;
+		case 'green':
+			selectColor = '#8AE3A3';
+			break;
+		case 'yellow':
+			selectColor = '#E5E2A1';
+			break;
+		case 'red':
+			selectColor = '#CC5F6F';
+			break;
+		default:
+			selectColor = '#6C6C6C';
+			break;
+	}
+	projectAry[project_tab_progress_idx1].ary[project_tab_progress_idx2].progress = $('#pcprojectprogressamend').val();
+	projectAry[project_tab_progress_idx1].ary[project_tab_progress_idx2].progressColor = selectColor;
+	projectForeach();
+	$('#pcprojecttabprogressmodal').modal('hide');
+};
+var project_tab_files_idx1;
+var project_tab_files_idx2;
+$('#pcprojecttabfilesmodal').on('show.bs.modal', function (event) {
+	project_tab_files_idx1 = $(event.relatedTarget).data('idx1');
+	project_tab_files_idx2 = $(event.relatedTarget).data('idx2');
+})
+function amendProjectTabFilesTap(){
+	projectAry[project_tab_files_idx1].ary[project_tab_files_idx2].files = $('#pcprojectfilesamend').val();
+	projectForeach();
+	$('#pcprojecttabfilesmodal').modal('hide');
+};
+
+
+// Todo列表
+function todoForeach(){
+	/**********先清空**********/
+	$('#pclefttodolist').empty();
+	$('#pcdailyTodo').empty();
+	$('#ydDailytodo').empty();
+	/**********追加子元素**********/
+	todoAry.forEach(function(item,index){
+		// pc端Todo左边列表追加
+		$('#pclefttodolist').append(`
+			<tr>
+				<td class="text-center" > <h4>${item.date}　　　${item.ary.length}　items</h4> </td>
+			</tr>
+		`);
+		// pc端Todo右边列表追加
+		$('#pcdailyTodo').append(`
+			<div class="row" style="margin-top: 30px;" >
+				<div class="col-md-10 col-md-offset-1 text-left" style="padding: 0px;color: ${item.color};" data-toggle="collapse" data-target="#zd${index}" >
+					<span class="glyphicon glyphicon-play"></span>
+					<span>${item.date}</span>
+				</div>
+				<div id="zd${index}" class="col-lg-10 col-md-offset-1 collapse" style="" >
+					<table id="pctodotab${index}" class="table table-bordered" style="margin-top: 10px;background: #E6E6E6;border-radius: 10px;overflow: hidden;">
+						
+					</table>
+					<span data-idx="${index}" data-toggle="modal" data-target="#pctodotabmodal" class="glyphicon glyphicon-plus-sign"
+						style="font-size:20px;color:#7d7d7d;" >
+					</span>
+				</div>
+			</div>
+		`);
+		// 移动端列表追加
+		$('#ydDailytodo').append(`
+			<div style="padding: 0.5rem 0rem 0.5rem 0rem;box-sizing: border-box;" >
+				<div data-toggle="collapse" data-target="#ydcollapse${index}" style="color: ${item.color};" >
+					<span class="glyphicon glyphicon-play" ></span>
+					<span>${item.date}</span>
+				</div>
+				<div class="collapse in" id="ydcollapse${index}" style="padding: 1.25rem 2rem 0rem 2rem;" >
+					<table id="ydtodotab${index}" class="table table-bordered" style="background: #E1E1E1;border-radius: 1rem;overflow: hidden;" >
+						
+					</table>
+				</div>
+			</div>
+		`);
+		item.ary.forEach(function(item1,index1){
+			$(`#pctodotab${index}`).append(`
+				<tr style="border-bottom: 1px solid #DDDDDD;" ><td style="padding: 1.8rem;" class="text-left" ><input type="checkbox" >　　${item1.content}</td></tr>
+			`)
+		});
+		item.ary.forEach(function(item1,index1){
+			$(`#ydtodotab${index}`).append(`
+				<tr style="border-bottom: 0.08rem solid #DDDDDD;" ><td style="padding: 0.8rem;" ><input type="checkbox">　　${item1.content}</td></tr>
+			`)
+		});
+	});
+};
+todoForeach();
+// 添加Todo项
+function addTodoTap(){
+	var obj = {
+		date:$('#pctododate').val(),
+		color:$('#pctodocolor').val(),
+		ary:[],
+	};
+	todoAry.push(obj);
+	todoForeach();
+	// console.log(todoAry);
+	$('#pctodomodal').modal('hide');
+};
+var todo_tab_idx;
+$('#pctodotabmodal').on('show.bs.modal', function (event) {
+	todo_tab_idx = $(event.relatedTarget).data('idx');
+})
+function addTodoTabTap(){
+	var obj = {
+		check:false,
+		content:$('#pctodocontent').val(),
+	};
+	todoAry[todo_tab_idx].ary.push(obj);
+	todoForeach();
+	$('#pctodotabmodal').modal('hide');
 };
 //gray,green,yellow,red
 //#6C6C6C,#8AE3A3,#E5E2A1,#CC5F6F

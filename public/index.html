@@ -11,7 +11,6 @@
 	<link rel="stylesheet" href="./bootstrap-3.4.1/dist/css/bootstrap-theme.min.css">
 	<script src="./bootstrap-3.4.1/dist/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="./css/index.css">
-	
 </head>
 
 <body>
@@ -43,19 +42,8 @@
 			</div>
 			<!-- list of daily to-do -->
 			<div id="pcleftdailyTodo" class="leftTable col-md-12" style="display: none;" >
-				<table class="table" >
-					<tr>
-						<td class="text-center" > <h4>2022.04.07　　　5　items</h4> </td>
-					</tr>
-					<tr>
-						<td class="text-center" > <h4>2022.04.08　　　4　items</h4> </td>
-					</tr>
-					<tr>
-						<td class="text-center" > <h4>2022.04.09　　　5　items</h4> </td>
-					</tr>
-					<tr>
-						<td class="text-center" > <h4>2022.04.10　　　3　items</h4> </td>
-					</tr>
+				<table id="pclefttodolist" class="table" >
+					
 				</table>
 			</div>
 
@@ -133,74 +121,25 @@
 						<span>Personal Collection</span>
 					</div>
 				</div>
+				
 				<!-- Detail of Daily To-do -->
-				<div id="pcdailyTodo" class="dailyTodo" style="display: none;" >
-					<!-- 2022.04.07 -->
-					<div class="row" style="margin-top: 30px;" >
-						<div class="col-md-10 col-md-offset-1 text-left" style="padding: 0px;color: #BAA2EE;" data-toggle="collapse" data-target="#zd1" >
-							<span class="glyphicon glyphicon-play"></span>
-							<span>2022.04.07</span>
-						</div>
-						<div id="zd1" class="col-lg-10 col-md-offset-1 collapse" style="" >
-							<table class="table" style="margin-top: 10px;background: #E6E6E6;border-radius: 10px;overflow: hidden;">
-								<tr><td class="text-left" ><input type="checkbox">　　DECO2017 A2</td></tr>
-								<tr><td class="text-left" ><input type="checkbox">　　DECO2014 A3</td></tr>
-								<tr><td class="text-left" ><input type="checkbox">　　OLET2135 M3</td></tr>
-								<tr><td class="text-left" ><input type="checkbox">　　OLET1616 M2</td></tr>
-								<tr><td class="text-left" ><input type="checkbox">　　OLET1504 M2</td></tr>
-							</table>
-						</div>
-					</div>
-					<!-- 2022.04.08 -->
-					<div class="row" style="margin-top: 30px;" >
-						<div class="col-md-10 col-md-offset-1 text-left" style="padding: 0px;color: #94B7F1;" data-toggle="collapse" data-target="#zd2" >
-							<span class="glyphicon glyphicon-play"></span>
-							<span>2022.04.08</span>
-						</div>
-						<div id="zd2" class="col-lg-10 col-md-offset-1 collapse" style="" >
-							<table class="table" style="margin-top: 10px;background: #E6E6E6;border-radius: 10px;overflow: hidden;">
-								<tr><td class="text-left" ><input type="checkbox">　　DECO2017 A2</td></tr>
-								<tr><td class="text-left" ><input type="checkbox">　　DECO2014 A3</td></tr>
-								<tr><td class="text-left" ><input type="checkbox">　　OLET2135 M3</td></tr>
-								<tr><td class="text-left" ><input type="checkbox">　　OLET1616 M2</td></tr>
-							</table>
-						</div>
-					</div>
-					<!-- 2022.04.09 -->
-					<div class="row" style="margin-top: 30px;" >
-						<div class="col-md-10 col-md-offset-1 text-left" style="padding: 0px;color: #EFA586;" data-toggle="collapse" data-target="#zd3" >
-							<span class="glyphicon glyphicon-play"></span>
-							<span>2022.04.09</span>
-						</div>
-						<div id="zd3" class="col-lg-10 col-md-offset-1 collapse" style="" >
-							<table class="table" style="margin-top: 10px;background: #E6E6E6;border-radius: 10px;overflow: hidden;">
-								<tr><td class="text-left" ><input type="checkbox">　　DECO2017 A2</td></tr>
-								<tr><td class="text-left" ><input type="checkbox">　　DECO2014 A3</td></tr>
-								<tr><td class="text-left" ><input type="checkbox">　　OLET2135 M3</td></tr>
-								<tr><td class="text-left" ><input type="checkbox">　　OLET1616 M2</td></tr>
-								<tr><td class="text-left" ><input type="checkbox">　　OLET1504 M2</td></tr>
-							</table>
-						</div>
-					</div>
-					<!-- 2022.04.10 -->
-					<div class="row" style="margin-top: 30px;" >
-						<div class="col-md-10 col-md-offset-1 text-left" style="padding: 0px;color: #8CE69C;" data-toggle="collapse" data-target="#zd4" >
-							<span class="glyphicon glyphicon-play"></span>
-							<span>2022.04.10</span>
-						</div>
-						<div id="zd4" class="col-lg-10 col-md-offset-1 collapse" style="" >
-							<table class="table" style="margin-top: 10px;background: #E6E6E6;border-radius: 10px;overflow: hidden;">
-								<tr><td class="text-left" ><input type="checkbox">　　DECO2017 A2</td></tr>
-								<tr><td class="text-left" ><input type="checkbox">　　DECO2014 A3</td></tr>
-								<tr><td class="text-left" ><input type="checkbox">　　OLET2135 M3</td></tr>
-							</table>
-						</div>
-					</div>
+				<div id="pcdailyTodo" class="dailyTodo" style="display: none;position:relative;" >
+					
 				</div>
+				<!-- To-do添加按钮 -->
+				<span id="todoaddbtn" data-toggle="modal" data-target="#pctodomodal" class="glyphicon glyphicon-plus-sign" 
+					style="font-size:60px;color:#7d7d7d;z-index:109;position:fixed;right:2.2rem;top: 45rem;display:none;" >
+				</span>
+				
 				<!-- Project -->
 				<div id="pcproject" class="project" style="display: none;" >
 					
 				</div>
+				<!-- Project添加按钮 -->
+				<span id="projectaddbtn" data-toggle="modal" data-target="#pcprojectmodal" class="glyphicon glyphicon-plus-sign" 
+					style="font-size:60px;color:#7d7d7d;z-index:109;position:fixed;right:2.2rem;top: 45rem;display:none;" >
+				</span>
+				
 				<!-- Detail of Timer-->
 				<div id="pcTimer" class="Timer" style="display: none;" >
 					<div class="col-md-8 col-md-offset-2" style="position: relative;" >
@@ -318,51 +257,7 @@
 		<div class="contentBox container-fluid" >
 			<!-- list1 -->
 			<div id="ydDailytodo" class="list1" style="display: none;" >
-				<div style="padding: 0.5rem 0rem 0.5rem 0rem;box-sizing: border-box;" >
-					<div data-toggle="collapse" data-target="#ydcollapse1" style="color: #B398F8;" >
-						<span class="glyphicon glyphicon-play" ></span>
-						<span>2022.04.07</span>
-					</div>
-					<div class="collapse in" id="ydcollapse1" style="padding: 1.25rem 2rem 0rem 2rem;" >
-						<table class="table table-bordered" style="background: #E1E1E1;border-radius: 1rem;overflow: hidden;" >
-							<tr><td><input type="checkbox"></td></tr>
-							<tr><td><input type="checkbox"></td></tr>
-							<tr><td><input type="checkbox"></td></tr>
-							<tr><td><input type="checkbox"></td></tr>
-							<tr><td><input type="checkbox"></td></tr>
-						</table>
-					</div>
-				</div>
-				<div style="padding: 0.5rem 0rem 0.5rem 0rem;box-sizing: border-box;" >
-					<div data-toggle="collapse" data-target="#ydcollapse2" style="color: #89AEEF;" >
-						<span class="glyphicon glyphicon-play" ></span>
-						<span>2022.04.08</span>
-					</div>
-					<div class="collapse in" id="ydcollapse2" style="padding: 1.25rem 2rem 0rem 2rem;" >
-						<table class="table table-bordered" style="background: #E1E1E1;border-radius: 1rem;overflow: hidden;" >
-							<tr><td><input type="checkbox"></td></tr>
-							<tr><td><input type="checkbox"></td></tr>
-							<tr><td><input type="checkbox"></td></tr>
-							<tr><td><input type="checkbox"></td></tr>
-							<tr><td><input type="checkbox"></td></tr>
-						</table>
-					</div>
-				</div>
-				<div style="padding: 0.5rem 0rem 0.5rem 0rem;box-sizing: border-box;" >
-					<div data-toggle="collapse" data-target="#ydcollapse3" style="color: #90F0E5;" >
-						<span class="glyphicon glyphicon-play" ></span>
-						<span>2022.04.09</span>
-					</div>
-					<div class="collapse in" id="ydcollapse3" style="padding: 1.25rem 2rem 0rem 2rem;" >
-						<table class="table table-bordered" style="background: #E1E1E1;border-radius: 1rem;overflow: hidden;" >
-							<tr><td><input type="checkbox"></td></tr>
-							<tr><td><input type="checkbox"></td></tr>
-							<tr><td><input type="checkbox"></td></tr>
-							<tr><td><input type="checkbox"></td></tr>
-							<tr><td><input type="checkbox"></td></tr>
-						</table>
-					</div>
-				</div>
+				
 			</div>
 			<!-- list2 -->
 			<div id="ydProject" class="list2" style="display: none;" >
@@ -493,8 +388,179 @@
 		</div>
 
 	</div>
+	
+	<!-- 弹窗 -->
+	<!-- 添加todo -->
+	<div id="pctodomodal" class="modal fade" tabindex="-1" role="dialog"  >
+		<div class="modal-dialog" role="document" style="margin-top: 25rem;" >
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">Add Daily To-do</h4>
+				</div>
+				<div class="modal-body">
+					<div class="form-group">
+						<label for="exampleInputName2">Date</label>
+						<input id="pctododate" type="text" class="form-control" placeholder="please enter date">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputName2">Color</label>
+						<input id="pctodocolor" type="text" class="form-control" placeholder="please enter color">
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary" onclick="addTodoTap()" >Add</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+	<!-- 添加todo的table项 -->
+	<div id="pctodotabmodal" class="modal fade" tabindex="-1" role="dialog"  >
+		<div class="modal-dialog" role="document" style="margin-top: 25rem;" >
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">Add Daily To-do</h4>
+				</div>
+				<div class="modal-body">
+					<div class="form-group">
+						<label for="exampleInputName2">Content</label>
+						<input id="pctodocontent" type="text" class="form-control" placeholder="please enter date">
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary" onclick="addTodoTabTap()" >Add</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+	
+	
+	<!-- 添加project -->
+	<div id="pcprojectmodal" class="modal fade" tabindex="-1" role="dialog"  >
+		<div class="modal-dialog" role="document" style="margin-top: 25rem;" >
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">Add Project</h4>
+				</div>
+				<div class="modal-body">
+					<div class="form-group">
+						<label for="exampleInputName2">Title</label>
+						<input id="pcprojecttitle" type="text" class="form-control" placeholder="please enter title">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputName2">Color</label>
+						<input id="pcprojectcolor" type="text" class="form-control" placeholder="please enter color">
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary" onclick="addProjectTap()" >Add</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+	<!-- 添加project的table项 -->
+	<div id="pcprojecttabmodal" class="modal fade" tabindex="-1" role="dialog"  >
+		<div class="modal-dialog" role="document" style="margin-top: 25rem;" >
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">Add Project</h4>
+				</div>
+				<div class="modal-body">
+					<div class="form-group">
+						<label for="exampleInputName2">NAME</label>
+						<input id="pcprojectname" type="text" class="form-control" placeholder="please enter name">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputName2">DATE</label>
+						<input id="pcprojectdate" type="text" class="form-control" placeholder="please enter date">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputName2">PROGRESS</label>
+						<select id="pcprojectprogress" class="form-control">
+							<option>gray</option>
+							<option>green</option>
+							<option>yellow</option>
+							<option>red</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="exampleInputName2">FILES</label>
+						<select id="pcprojectfiles" class="form-control">
+							<option>link</option>
+							<option>img</option>
+							<option>file</option>
+						</select>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary" onclick="addProjectTabTap()" >Add</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+	<!-- 添加project的table项的颜色状态修改 -->
+	<div id="pcprojecttabprogressmodal" class="modal fade" tabindex="-1" role="dialog"  >
+		<div class="modal-dialog" role="document" style="margin-top: 25rem;" >
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">Amend Project PROGRESS</h4>
+				</div>
+				<div class="modal-body">
+					<div class="form-group">
+						<label for="exampleInputName2">PROGRESS</label>
+						<select id="pcprojectprogressamend" class="form-control">
+							<option>gray</option>
+							<option>green</option>
+							<option>yellow</option>
+							<option>red</option>
+						</select>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary" onclick="amendProjectTabProgressTap()" >Amend</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+	<!-- 添加project的table项的文件类型修改 -->
+	<div id="pcprojecttabfilesmodal" class="modal fade" tabindex="-1" role="dialog"  >
+		<div class="modal-dialog" role="document" style="margin-top: 25rem;" >
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">Amend Project FILES</h4>
+				</div>
+				<div class="modal-body">
+					<div class="form-group">
+						<label for="exampleInputName2">FILES</label>
+						<select id="pcprojectfilesamend" class="form-control">
+							<option>link</option>
+							<option>img</option>
+							<option>file</option>
+						</select>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary" onclick="amendProjectTabFilesTap()" >Amend</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+	
+	
+	
 </body>
 </html>
 <script src="http://localhost:1234/js/script.js" ></script>
-<script src="./js/script.js"></script>
+<!-- <script src="./js/script.js"></script> -->
 
