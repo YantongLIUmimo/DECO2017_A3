@@ -21,8 +21,8 @@ var projectAry=[
 			{
 				name:'Design & Iteration ',
 				date:'4.10-4.12',
-				progress:'green',//Not Started, Complete, Processing, Overdue
-				progressColor:'#8AE3A3',//#6C6C6C,#8AE3A3,#E5E2A1,#CC5F6F
+				progress:'Processing',//Not Started, Complete, Processing, Overdue
+				progressColor:'#E5E2A1',//#6C6C6C,#8AE3A3,#E5E2A1,#CC5F6F
 				files:'file',//link,img,file
 			},
 			{
@@ -42,54 +42,178 @@ var projectAry=[
 		],
 	},
 	{
-		tabbleName:'DECO  2017  A2  Due  date4.15',
+		tabbleName:'OLET  1504  M3  Due  date4.15',
 		color:'#81AFFF',
 		ary:[
 			{
-				name:'One',
-				date:'4.08-4.08',
-				progress:'gray',//gray,green,yellow,red
+				name:'Research',
+				date:'4.12-4.13',
+				progress:'Processing',//Not Started, Complete, Processing, Overdue
+				progressColor:'#E5E2A1',//#6C6C6C,#8AE3A3,#E5E2A1,#CC5F6F
+				files:'link',//link,img,file
+			},
+			{
+				name:'Pre Speech Draft',
+				date:'4.12-4.13',
+				progress:'Not Started',//Not Started, Complete, Processing, Overdue
 				progressColor:'#6C6C6C',//#6C6C6C,#8AE3A3,#E5E2A1,#CC5F6F
 				files:'link',//link,img,file
 			},
 			{
-				name:'Two',
-				date:'4.08-4.08',
-				progress:'green',//gray,green,yellow,red
-				progressColor:'#8AE3A3',//#6C6C6C,#8AE3A3,#E5E2A1,#CC5F6F
-				files:'link',//link,img,file
-			},
-			{
-				name:'Three',
-				date:'4.08-4.08',
-				progress:'green',//gray,green,yellow,red
-				progressColor:'#8AE3A3',//#6C6C6C,#8AE3A3,#E5E2A1,#CC5F6F
+				name:'Development',
+				date:'4.14-4.15',
+				progress:'Not Started',//Not Started, Complete, Processing, Overdue
+				progressColor:'#6C6C6C',//#6C6C6C,#8AE3A3,#E5E2A1,#CC5F6F
 				files:'link',//link,img,file
 			},
 		],
 	},
 	{
-		tabbleName:'DECO  2017  A2  Due  date4.15',
+		tabbleName:'DECO  2014  A3  Due  date4.26',
 		color:'#F0A684',
 		ary:[
 			{
-				name:'One',
-				date:'4.08-4.08',
-				progress:'gray',//gray,green,yellow,red
+				name:'Research',
+				date:'4.17-4.18',
+				progress:'Not Started',//Not Started, Complete, Processing, Overdue
 				progressColor:'#6C6C6C',//#6C6C6C,#8AE3A3,#E5E2A1,#CC5F6F
 				files:'link',//link,img,file
 			},
 			{
-				name:'Two',
-				date:'4.08-4.08',
-				progress:'green',//gray,green,yellow,red
-				progressColor:'#8AE3A3',//#6C6C6C,#8AE3A3,#E5E2A1,#CC5F6F
+				name:'Concept',
+				date:'4.18-4.19',
+				progress:'Not Started',//Not Started, Complete, Processing, Overdue
+				progressColor:'#6C6C6C',//#6C6C6C,#8AE3A3,#E5E2A1,#CC5F6F
+				files:'link',//link,img,file
+			},
+			{
+				name:'Engaging Vision',
+				date:'4.20-4.21',
+				progress:'Not Started',//Not Started, Complete, Processing, Overdue
+				progressColor:'#6C6C6C',//#6C6C6C,#8AE3A3,#E5E2A1,#CC5F6F
+				files:'link',//link,img,file
+			},
+			{
+				name:'Justification',
+				date:'4.22',
+				progress:'Not Started',//Not Started, Complete, Processing, Overdue
+				progressColor:'#6C6C6C',//#6C6C6C,#8AE3A3,#E5E2A1,#CC5F6F
+				files:'link',//link,img,file
+			},
+			{
+				name:'Development',
+				date:'4.23-4.26',
+				progress:'Not Started',//Not Started, Complete, Processing, Overdue
+				progressColor:'#6C6C6C',//#6C6C6C,#8AE3A3,#E5E2A1,#CC5F6F
+				files:'link',//link,img,file
+			},
+			{
+				name:'Storyboard',
+				date:'4.23-4.26',
+				progress:'Not Started',//Not Started, Complete, Processing, Overdue
+				progressColor:'#6C6C6C',//#6C6C6C,#8AE3A3,#E5E2A1,#CC5F6F
 				files:'link',//link,img,file
 			},
 		],
 	},
 ];
-// Click on the avatar to go to the user information page
+// Detaile of Daily To-do list
+var todoAry = [
+	{
+		date:'2022.04.07',
+		color: '#BAA2EE',
+		ary:[
+			{
+				check:true,
+				content:'DECO2017 A2',
+			},
+			{
+				check:true,
+				content:'DECO2014 A3',
+			},
+			{
+				check:false,
+				content:'OLET2135 M3',
+			},
+			{
+				check:false,
+				content:'OLET1616 M2',
+			},
+			{
+				check:false,
+				content:'OLET1504 M2',
+			},
+		],
+	},
+	{
+		date:'2022.04.08',
+		color: '#94B7F1',
+		ary:[
+			{
+				check:false,
+				content:'DECO2017 A2',
+			},
+			{
+				check:false,
+				content:'DECO2014 A3',
+			},
+			{
+				check:false,
+				content:'OLET2135 M3',
+			},
+			{
+				check:false,
+				content:'OLET1616 M2',
+			},
+		],
+	},
+	{
+		date:'2022.04.09',
+		color: '#EFA586',
+		ary:[
+			{
+				check:false,
+				content:'DECO2017 A2',
+			},
+			{
+				check:false,
+				content:'DECO2014 A3',
+			},
+			{
+				check:false,
+				content:'OLET2135 M3',
+			},
+			{
+				check:false,
+				content:'OLET1616 M2',
+			},
+			{
+				check:false,
+				content:'OLET1504 M2',
+			},
+		],
+	},
+	{
+		date:'2022.04.10',
+		color: '#8CE69C',
+		ary:[
+			{
+				check:false,
+				content:'DECO2017 A2',
+			},
+			{
+				check:false,
+				content:'DECO2014 A3',
+			},
+			{
+				check:false,
+				content:'OLET2135 M3',
+			},
+		],
+	},
+];
+
+// Click on the avatar to display user information
 function pctxTap(){
 	document.getElementById('pcuserinfo').style.display = 'block';
 	document.getElementById('pcdailyTodo').style.display = 'none';
@@ -99,8 +223,13 @@ function pctxTap(){
 	document.getElementById('pcleftuserinfo').style.display = 'block';
 	document.getElementById('pcleftdailyTodo').style.display = 'none';
 	document.getElementById('pcleftproject').style.display = 'none';
+	document.getElementById('pcleftmusic').style.display = 'none';
+	document.getElementById('todoaddbtn').style.display = 'none';
+	document.getElementById('projectaddbtn').style.display = 'none';
 }
-// PC: Click on the logo to perform a zoom animation and display user information
+
+// PC
+//PC: Click on the logo to perform a zoom animation and display user information
 function pclogoTap(){
 	// animation-play-state: running;
 	document.getElementById('pclogo').style.animationPlayState = 'running';
@@ -113,8 +242,11 @@ function pclogoTap(){
 	document.getElementById('pcleftuserinfo').style.display = 'block';
 	document.getElementById('pcleftdailyTodo').style.display = 'none';
 	document.getElementById('pcleftproject').style.display = 'none';
+	document.getElementById('pcleftmusic').style.display = 'none';
+	document.getElementById('todoaddbtn').style.display = 'none';
+	document.getElementById('projectaddbtn').style.display = 'none';
 }
-// PC: Click on DailyTodo to display the DailyTodo list and hide the rest of the content
+//PC: Click on Daily To-do to display the Daily To-do list and hide the rest of the content
 function pcDailyTodoTap(){
 	document.getElementById('pcuserinfo').style.display = 'none';
 	document.getElementById('pcdailyTodo').style.display = 'block';
@@ -124,6 +256,9 @@ function pcDailyTodoTap(){
 	document.getElementById('pcleftuserinfo').style.display = 'none';
 	document.getElementById('pcleftdailyTodo').style.display = 'block';
 	document.getElementById('pcleftproject').style.display = 'none';
+	document.getElementById('pcleftmusic').style.display = 'none';
+	document.getElementById('todoaddbtn').style.display = 'block';
+	document.getElementById('projectaddbtn').style.display = 'none';
 };
 // PC: Click on Project to display the Project list and hide the rest of the content
 function pcProjectTap(){
@@ -135,24 +270,27 @@ function pcProjectTap(){
 	document.getElementById('pcleftuserinfo').style.display = 'none';
 	document.getElementById('pcleftdailyTodo').style.display = 'none';
 	document.getElementById('pcleftproject').style.display = 'block';
+	document.getElementById('pcleftmusic').style.display = 'none';
+	document.getElementById('todoaddbtn').style.display = 'none';
+	document.getElementById('projectaddbtn').style.display = 'block';
 };
-// PC: Click on the clock menu to display the difference module of clock
-var currentTimer = "Stopwatch";//Currently displayed variable of clock
+// PC: Click on the Timer to display the corresponding timer module(Countdown,Stopwatch and Pomodoro Timer)
+var currentTimer = "Stopwatch";//Initial variables for timer module
 function pcTimerMenuTap(state){
-	if(state == '1'){
+	if(state == '1'){ //Countdown
 		document.getElementById('pcTimer').getElementsByTagName('h3')[0].innerHTML = 'Countdown';
 		document.getElementById('pcsettimercountdownrow').style.display = 'block';
 		document.getElementById('pcsettimerpomodororow').style.display = 'none';
 		document.getElementById('pctimernameTip').style.display = 'none';
 		currentTimer = "Countdown";
-	}else if(state == '2'){
+	}else if(state == '2'){ //Stopwatch
 		document.getElementById('pcTimer').getElementsByTagName('h3')[0].innerHTML = 'Stopwatch';
 		document.getElementById('pcsettimercountdownrow').style.display = 'none';
 		document.getElementById('pcsettimerpomodororow').style.display = 'none';
 		document.getElementById('pctimernameTip').style.display = 'none';
 		currentTimer = "Stopwatch";
-	}else if(state == '3'){
-		document.getElementById('pcTimer').getElementsByTagName('h3')[0].innerHTML = 'Pomodoro  Timer';
+	}else if(state == '3'){ //Pomodoro Timer
+		document.getElementById('pcTimer').getElementsByTagName('h3')[0].innerHTML = 'Pomodoro Timer';
 		document.getElementById('pcsettimercountdownrow').style.display = 'none';
 		document.getElementById('pcsettimerpomodororow').style.display = 'block';
 		document.getElementById('pctimernameTip').style.display = 'block';
@@ -169,6 +307,9 @@ function pcTimerMenuTap(state){
 	document.getElementById('pcleftuserinfo').style.display = 'block';
 	document.getElementById('pcleftdailyTodo').style.display = 'none';
 	document.getElementById('pcleftproject').style.display = 'none';
+	document.getElementById('pcleftmusic').style.display = 'none';
+	document.getElementById('todoaddbtn').style.display = 'none';
+	document.getElementById('projectaddbtn').style.display = 'none';
 	
 	clearInterval(CountdownInterval);
 	CountdownInterval = null;
@@ -184,7 +325,7 @@ function pcTimerMenuTap(state){
 	pomodoroseconds1_record = 0;//pomodoro: The current number of seconds defaults to 0 (Rest),(Record the last value)
 	pomodoroCount = 0;//pomodoro: The current number of seconds defaults to 0 (Times)
 }
-// PC: Click on the Music player to show the Music module and hide the other modules
+// PC: Click on the Music Player to display the Music Player and hide the rest of the content
 function pcMusicMenuTap(){
 	document.getElementById('pcuserinfo').style.display = 'none';
 	document.getElementById('pcdailyTodo').style.display = 'none';
@@ -195,14 +336,16 @@ function pcMusicMenuTap(){
 	document.getElementById('pcleftdailyTodo').style.display = 'none';
 	document.getElementById('pcleftproject').style.display = 'none';
 	document.getElementById('pcleftmusic').style.display = 'block';
+	document.getElementById('todoaddbtn').style.display = 'none';
+	document.getElementById('projectaddbtn').style.display = 'none';
 }
-// PC: Click on the Timer section to shrink the timer to the hover window
+// PC: click to shrink in Timer page, Timer page changed to hover window
 function pctimesuoTap(){
 	document.getElementById('pctimerMiniBox').style.display = 'block';
 	document.getElementById('pcTimer').style.display = 'none';
 	document.getElementById('pcuserinfo').style.display = 'block';
 }
-// PC: TIMER-Click setting time display setting module
+// PC: Click on Settings on the Timer page to display the Settings module
 function pcsettimerTap(){
 	if(document.getElementById('pcSetTimer').style.display == 'block'){
 		document.getElementById('pcSetTimer').style.display = 'none';
@@ -217,19 +360,20 @@ var pomodoroseconds1 = 0;//pomodoro: The current number of seconds defaults to 0
 var pomodoroseconds_record = 0;//pomodoro: The current number of seconds defaults to 0 （Work),(Record the last value)
 var pomodoroseconds1_record = 0;//pomodoro: The current number of seconds defaults to 0 (Rest),(Record the last value)
 var pomodoroCount = 0;//pomodoro: The current number of seconds defaults to 0 (Times)
+
 // Methods of time shifting
 function getTime(time) {
-	// 转换为式分秒
+	// Time conversion to hours, minutes and seconds
 	let h = parseInt(time / 60 / 60 % 24)
 	h = h < 10 ? '0' + h : h
 	let m = parseInt(time / 60 % 60)
 	 m = m < 10 ? '0' + m : m
 	let s = parseInt(time % 60)
 	 s = s < 10 ? '0' + s : s
-	// 作为返回值返回
+	// Returned as a return value
 	return [h, m, s]
 }
-// pc端点击保存设置,保存赋值相应的时钟当前秒数，以及相应的显示隐藏
+// PC: Click on Save Settings on the settings page to save the current seconds of the corresponding timer model and to hide the other timers.
 function pcsavetimerTap(){
 	document.getElementById('pcSetTimer').style.display = 'none';
 	countdownseconds = (document.getElementById('countdownhour').value*60*60)+(document.getElementById('countdownminutes').value*60);
@@ -253,18 +397,18 @@ function pcsavetimerTap(){
 	}
 }
 
-// pc端时钟操作的点击事件
-var CountdownInterval = null;//Countdown时钟的计时器变量默认为空
-var StopwatchInterval = null;//Stopwatch时钟的计时器变量默认为空
-var PomodoroInterval = null;//Pomodoro时钟的计时器变量默认为空
-// pc端时钟操点击START
+// PC: Click event on Timer manipulation
+var CountdownInterval = null;//The Countdown variable is null by default
+var StopwatchInterval = null;//The Stopwatch variable is null by default
+var PomodoroInterval = null;//The Pomodoro Timer variable is null by default
+// PC: Timer click on the START button
 function pctimerstart(){
-	if(currentTimer == 'Countdown'){ //如果当前为Countdown时钟的计时方法
+	if(currentTimer == 'Countdown'){ //If the current timer mode is Countdown
 		if(CountdownInterval != null){
 			return
 		}
 		if(countdownseconds <= 0){
-			alert('请设置倒计时时间');
+			alert('Please set a countdown time');
 		}else{
 			CountdownInterval = setInterval(function(){
 				if(countdownseconds<1){
@@ -279,7 +423,7 @@ function pctimerstart(){
 				document.getElementById('timernumber2').innerHTML = `${getTime(countdownseconds)[0]}:${getTime(countdownseconds)[1]}:${getTime(countdownseconds)[2]}`;
 			},1000);
 		}
-	}else if(currentTimer == 'Stopwatch'){//如果当前为Stopwatch时钟的计时方法
+	}else if(currentTimer == 'Stopwatch'){//If the current timer mode is Stopwatch
 		if(StopwatchInterval != null){
 			return
 		}
@@ -289,14 +433,14 @@ function pctimerstart(){
 			document.getElementById('timernumber1').innerHTML = `${getTime(stopwatchseconds)[0]}:${getTime(stopwatchseconds)[1]}:${getTime(stopwatchseconds)[2]}`;
 			document.getElementById('timernumber2').innerHTML = `${getTime(stopwatchseconds)[0]}:${getTime(stopwatchseconds)[1]}:${getTime(stopwatchseconds)[2]}`;
 		},1000)
-	}else if(currentTimer == 'Pomodoro'){//如果当前为Pomodoro时钟的计时方法
+	}else if(currentTimer == 'Pomodoro'){//If the current timer mode is Pomodoro Timer
 		if(PomodoroInterval != null){
 			return
 		}
 		if(pomodoroCount <= 0){
-			alert('请设置倒计时执行次数');
+			alert('Please set the number of times the pomodoro timer is executed');
 		}else if(pomodoroseconds_record <= 0 || pomodoroseconds1_record <= 0){
-			alert('请设置倒计时工作时间和休息时间');
+			alert('Please set a pomodoro timer for working hours and rest');
 		}else{
 			if(pomodoroCount<1){
 				return;
@@ -323,20 +467,19 @@ function pctimerstart(){
 					}else{
 						clearInterval(PomodoroInterval);
 						PomodoroInterval = null;
-						pomodoroseconds = 0;//pomodoro时钟当前的秒数默认为0(工作)
-						pomodoroseconds1 = 0;//pomodoro时钟当前的秒数默认为0(休息)
-						pomodoroseconds_record = 0;//pomodoro时钟当前的秒数默认为0(工作),(记录上一次的值)
-						pomodoroseconds1_record = 0;//pomodoro时钟当前的秒数默认为0(休息),(记录上一次的值)
-						pomodoroCount = 0;//pomodoro时钟当前的秒数默认为0(次数)
+						pomodoroseconds = 0;//pomodoro: The current number of seconds defaults to 0 (Work)
+						pomodoroseconds1 = 0;//pomodoro: The current number of seconds defaults to 0 (Rest)
+						pomodoroseconds_record = 0;//pomodoro: The current number of seconds defaults to 0 （Work),(Record the last value)
+						pomodoroseconds1_record = 0;//pomodoro: The current number of seconds defaults to 0 (Rest),(Record the last value)
+						pomodoroCount = 0;//pomodoro: The current number of seconds defaults to 0 (Times)
 						return;
 					}
 				},1000);
 			}
-			
 		}
 	}
 };
-// pc端时钟操点击STOP，停止定时器，并赋值定时器空
+// PC: Timer click on the STOP button, stop the timer and assign timer empty
 function pctimerstop(){
 	if(currentTimer == 'Countdown'){
 		clearInterval(CountdownInterval);
@@ -349,67 +492,64 @@ function pctimerstop(){
 		PomodoroInterval = null;
 	}
 };
-// pc端时钟操点击RESET，清除定时器，并将相应的当前时间清0
+// PC: Timer click on the RESET button, Clear timer's existing timing and clear the corresponding current time to 0
 function pctimerreset(){
-	if(currentTimer == 'Countdown'){
+	if(currentTimer == 'Countdown'){//Countdown
 		clearInterval(CountdownInterval);
 		CountdownInterval = null;
 		countdownseconds = 0;
 		document.getElementById('timernumber').innerHTML = `${getTime(countdownseconds)[0]}:${getTime(countdownseconds)[1]}:${getTime(countdownseconds)[2]}`;
 		document.getElementById('timernumber1').innerHTML = `${getTime(countdownseconds)[0]}:${getTime(countdownseconds)[1]}:${getTime(countdownseconds)[2]}`;
 		document.getElementById('timernumber2').innerHTML = `${getTime(countdownseconds)[0]}:${getTime(countdownseconds)[1]}:${getTime(countdownseconds)[2]}`;
-	}else if(currentTimer == 'Stopwatch'){
+	}else if(currentTimer == 'Stopwatch'){//Stopwatch
 		clearInterval(StopwatchInterval);
 		StopwatchInterval = null;
 		stopwatchseconds = 0;
 		document.getElementById('timernumber').innerHTML = `${getTime(stopwatchseconds)[0]}:${getTime(stopwatchseconds)[1]}:${getTime(stopwatchseconds)[2]}`;
 		document.getElementById('timernumber1').innerHTML = `${getTime(stopwatchseconds)[0]}:${getTime(stopwatchseconds)[1]}:${getTime(stopwatchseconds)[2]}`;
 		document.getElementById('timernumber2').innerHTML = `${getTime(stopwatchseconds)[0]}:${getTime(stopwatchseconds)[1]}:${getTime(stopwatchseconds)[2]}`;
-	}else if(currentTimer == 'Pomodoro'){
+	}else if(currentTimer == 'Pomodoro'){//Pomodoro timer
 		clearInterval(PomodoroInterval);
 		PomodoroInterval = null;
-		pomodoroseconds = 0;//pomodoro时钟当前的秒数默认为0(工作)
-		pomodoroseconds1 = 0;//pomodoro时钟当前的秒数默认为0(休息)
-		pomodoroseconds_record = 0;//pomodoro时钟当前的秒数默认为0(工作),(记录上一次的值)
-		pomodoroseconds1_record = 0;//pomodoro时钟当前的秒数默认为0(休息),(记录上一次的值)
-		pomodoroCount = 0;//pomodoro时钟当前的秒数默认为0(次数)
+		pomodoroseconds = 0;//pomodoro: The current number of seconds defaults to 0 (Work)
+		pomodoroseconds1 = 0;//pomodoro: The current number of seconds defaults to 0 (Rest)
+		pomodoroseconds_record = 0;//pomodoro: The current number of seconds defaults to 0 （Work),(Record the last value)
+		pomodoroseconds1_record = 0;//pomodoro: The current number of seconds defaults to 0 (Rest),(Record the last value)
+		pomodoroCount = 0;//pomodoro: The current number of seconds defaults to 0 (Times)
 		document.getElementById('timernumber').innerHTML = `${getTime(pomodoroseconds)[0]}:${getTime(pomodoroseconds)[1]}:${getTime(pomodoroseconds)[2]}`;
 		document.getElementById('timernumber1').innerHTML = `${getTime(pomodoroseconds)[0]}:${getTime(pomodoroseconds)[1]}:${getTime(pomodoroseconds)[2]}`;
 		document.getElementById('timernumber2').innerHTML = `${getTime(pomodoroseconds)[0]}:${getTime(pomodoroseconds)[1]}:${getTime(pomodoroseconds)[2]}`;
 	}
 };
 
-// Pc端点击时钟小悬浮窗  放大操作，将相应的显示隐藏
+// PC: Click on the hover window of the timer to enlarge the icon and hide the corresponding display
 function pctimerMinifangTap(){
 	document.getElementById('pctimerMiniBox').style.display = 'none';
 	document.getElementById('pcTimer').style.display = 'block';
 	document.getElementById('pcuserinfo').style.display = 'none';
 };
 
-
-
-
-
-// 移动端点击Logo显示个人信息模块
+// Mobile
+// Mobile: Click on the logo to display the user information module
 function ydlogoTap(){
 	console.log('wwww胡');
 	document.getElementById('ydUserinfo').style.display = 'block';
 	document.getElementById('ydlogo').style.animationPlayState = 'running';
+	document.getElementById('todoaddbtn').style.display = 'none';
+	document.getElementById('projectaddbtn').style.display = 'none';
 }
 
-// 移动端点击右边…菜单显示/隐藏的监听事件 做相应的显示隐藏操作，
+// Mobile: Click the button on the top right to show/hide the menu.
 $('#yddropdown').on('show.bs.dropdown', function () {
-	// console.log("下拉菜单已经显示。");
 	document.getElementById('ydmenuicon').classList.remove('glyphicon-option-horizontal');
 	document.getElementById('ydmenuicon').classList.add('glyphicon-option-vertical');
 });
 $('#yddropdown').on('hide.bs.dropdown', function () {
-	// console.log("下拉菜单已经隐藏。");
 	document.getElementById('ydmenuicon').classList.remove('glyphicon-option-vertical');
 	document.getElementById('ydmenuicon').classList.add('glyphicon-option-horizontal');
 });
 
-// 移动端点击时钟设置  显示/隐藏  设置模块
+// Mobile: Click on the Timer Settings button to show/hide the Settings module
 function ydsettimerTap(){
 	if(document.getElementById('ydSetTimer').style.display == 'block'){
 		document.getElementById('ydSetTimer').style.display = 'none';
@@ -417,7 +557,7 @@ function ydsettimerTap(){
 		document.getElementById('ydSetTimer').style.display = 'block';
 	}
 }
-// 移动端点击保存设置  相应的显示当前时间
+// Mobile: Click on Save Settings and the set time will be displayed
 function ydsavetimerTap(){
 	document.getElementById('ydSetTimer').style.display = 'none';
 	countdownseconds = (document.getElementById('countdownhour1').value*60*60)+(document.getElementById('countdownminutes1').value*60);
@@ -426,41 +566,35 @@ function ydsavetimerTap(){
 	pomodoroseconds_record = document.getElementById('pomodorohour1').value*60;
 	pomodoroseconds1_record = document.getElementById('pomodorominutes1').value*60;
 	pomodoroCount = document.getElementById('pomodorocount1').value;
-	if(currentTimer == 'Countdown'){
+	if(currentTimer == 'Countdown'){//Countdown
 		document.getElementById('timernumber').innerHTML = `${getTime(countdownseconds)[0]}:${getTime(countdownseconds)[1]}:${getTime(countdownseconds)[2]}`;
 		document.getElementById('timernumber1').innerHTML = `${getTime(countdownseconds)[0]}:${getTime(countdownseconds)[1]}:${getTime(countdownseconds)[2]}`;
 		document.getElementById('timernumber2').innerHTML = `${getTime(countdownseconds)[0]}:${getTime(countdownseconds)[1]}:${getTime(countdownseconds)[2]}`;
-	}else if(currentTimer == 'Stopwatch'){
+	}else if(currentTimer == 'Stopwatch'){//Stopwatch
 		document.getElementById('timernumber').innerHTML = `${getTime(stopwatchseconds)[0]}:${getTime(stopwatchseconds)[2]}:${getTime(stopwatchseconds)[2]}`;
 		document.getElementById('timernumber1').innerHTML = `${getTime(stopwatchseconds)[0]}:${getTime(stopwatchseconds)[2]}:${getTime(stopwatchseconds)[2]}`;
 		document.getElementById('timernumber2').innerHTML = `${getTime(stopwatchseconds)[0]}:${getTime(stopwatchseconds)[2]}:${getTime(stopwatchseconds)[2]}`;
-	}else if(currentTimer == 'Pomodoro'){
+	}else if(currentTimer == 'Pomodoro'){//Pomodoro Timer
 		document.getElementById('timernumber').innerHTML = `${getTime(pomodoroseconds)[0]}:${getTime(pomodoroseconds)[1]}:${getTime(pomodoroseconds)[2]}`;
 		document.getElementById('timernumber1').innerHTML = `${getTime(pomodoroseconds)[0]}:${getTime(pomodoroseconds)[1]}:${getTime(pomodoroseconds)[2]}`;
 		document.getElementById('timernumber2').innerHTML = `${getTime(pomodoroseconds)[0]}:${getTime(pomodoroseconds)[1]}:${getTime(pomodoroseconds)[2]}`;
 	}
 }
-function ydmusicfangTap(){
-	// document.getElementById('ydmusicWarp').style.animationPlayState = 'running';
-}
-function ydmusicsuoTap(){
 
-}
-
-// 移动端点击底部菜单 显示/隐藏相应模块
-// 移动端点击时钟显示相应类型的时钟
+// Mobile: Bottom menu
+// Mobile: Click on a timer to display the corresponding type of timer
 function ydtimerTap(state){
-	if(state == '1'){
+	if(state == '1'){//Countdown
 		document.getElementById('ydTimer').getElementsByTagName('h3')[0].innerHTML = 'Countdown';
 		document.getElementById('ydsettimercountdownrow').style.display = 'block';
 		document.getElementById('ydsettimerpomodororow').style.display = 'none';
 		currentTimer = "Countdown";
-	}else if(state == '2'){
+	}else if(state == '2'){//Stopwatch
 		document.getElementById('ydTimer').getElementsByTagName('h3')[0].innerHTML = 'Stopwatch';
 		document.getElementById('ydsettimercountdownrow').style.display = 'none';
 		document.getElementById('ydsettimerpomodororow').style.display = 'none';
 		currentTimer = "Stopwatch";
-	}else if(state == '3'){
+	}else if(state == '3'){//Pomodoro Timer
 		document.getElementById('ydTimer').getElementsByTagName('h3')[0].innerHTML = 'Pomodoro  Timer';
 		document.getElementById('ydsettimercountdownrow').style.display = 'none';
 		document.getElementById('ydsettimerpomodororow').style.display = 'block';
@@ -474,6 +608,8 @@ function ydtimerTap(state){
 	document.getElementById('ydTimer').style.display = 'block';
 	document.getElementById('ydMusic').style.display = 'none';
 	document.getElementById('ydUserinfo').style.display = 'none';
+	document.getElementById('todoaddbtn').style.display = 'none';
+	document.getElementById('projectaddbtn').style.display = 'none';
 	
 	clearInterval(CountdownInterval);
 	CountdownInterval = null;
@@ -481,70 +617,78 @@ function ydtimerTap(state){
 	StopwatchInterval = null;
 	clearInterval(PomodoroInterval);
 	PomodoroInterval = null;
-	countdownseconds = 0;//countdown时钟当前的秒数默认为0
-	stopwatchseconds = 0;//stopwatch时钟当前的秒数默认为0
-	pomodoroseconds = 0;//pomodoro时钟当前的秒数默认为0(工作)
-	pomodoroseconds1 = 0;//pomodoro时钟当前的秒数默认为0(休息)
-	pomodoroseconds_record = 0;//pomodoro时钟当前的秒数默认为0(工作),(记录上一次的值)
-	pomodoroseconds1_record = 0;//pomodoro时钟当前的秒数默认为0(休息),(记录上一次的值)
-	pomodoroCount = 0;//pomodoro时钟当前的秒数默认为0(次数)
+	countdownseconds = 0;//countdown: The current number of seconds defaults to 0
+	stopwatchseconds = 0;//stopwatch: The current number of seconds defaults to 0
+	pomodoroseconds = 0;//pomodoro: The current number of seconds defaults to 0 (Work)
+	pomodoroseconds1 = 0;//pomodoro: The current number of seconds defaults to 0 (Rest)
+	pomodoroseconds_record = 0;//pomodoro: The current number of seconds defaults to 0 （Work),(Record the last value)
+	pomodoroseconds1_record = 0;//pomodoro: The current number of seconds defaults to 0 (Rest),(Record the last value)
+	pomodoroCount = 0;//pomodoro: The current number of seconds defaults to 0 (Times)
 };
-// 移动端点击Project显示Project列表
+// Mobile: Click on Project to display a list of projects
 function ydProjectTap(){
 	document.getElementById('ydDailytodo').style.display = 'none';
 	document.getElementById('ydProject').style.display = 'block';
 	document.getElementById('ydTimer').style.display = 'none';
 	document.getElementById('ydMusic').style.display = 'none';
 	document.getElementById('ydUserinfo').style.display = 'none';
+	document.getElementById('todoaddbtn').style.display = 'none';
+	document.getElementById('projectaddbtn').style.display = 'block';
 };
-// 移动端点击DailyTodo显示DailyTodo列表
+// Mobile: Click on Daily To-do to display a list of Daily To-do
 function ydDailyTodoTap(){
 	document.getElementById('ydDailytodo').style.display = 'block';
 	document.getElementById('ydProject').style.display = 'none';
 	document.getElementById('ydTimer').style.display = 'none';
 	document.getElementById('ydMusic').style.display = 'none';
 	document.getElementById('ydUserinfo').style.display = 'none';
+	document.getElementById('todoaddbtn').style.display = 'block';
+	document.getElementById('projectaddbtn').style.display = 'none';
 };
-// 移动端点击音乐显示音乐模块
+// Mobile: Click on the music player to display the music module
 function ydMusicTap(){
 	document.getElementById('ydDailytodo').style.display = 'none';
 	document.getElementById('ydProject').style.display = 'none';
 	document.getElementById('ydTimer').style.display = 'none';
 	document.getElementById('ydMusic').style.display = 'block';
 	document.getElementById('ydUserinfo').style.display = 'none';
+	document.getElementById('todoaddbtn').style.display = 'none';
+	document.getElementById('projectaddbtn').style.display = 'none';
 };
-// 移动端点击个人信息显示用户信息模块
+// Mobile: Click on user information to display the user information module
 function ydUserinfoTap(){
 	document.getElementById('ydDailytodo').style.display = 'none';
 	document.getElementById('ydProject').style.display = 'none';
 	document.getElementById('ydTimer').style.display = 'none';
 	document.getElementById('ydMusic').style.display = 'none';
 	document.getElementById('ydUserinfo').style.display = 'block';
+	document.getElementById('todoaddbtn').style.display = 'none';
+	document.getElementById('projectaddbtn').style.display = 'none';
 };
 
-// 音乐的相关操作（pc 及 移动端 共用）
-// 获取audio音频对象
+// All operations related to the music player（PC and Mobile）
+// Get the audio object
 var myAudio = document.getElementById('myAudio');
-//音乐数组
+//Music arrays
 var myAdAry = [
 	{
-		name:'music  one',
+		name:'Good Time',
 		img:'http://localhost:1234/mp3/1.jpeg',
 		url:'http://localhost:1234/mp3/1.mp3',
 	},
 	{
-		name:'music  two',
+		name:'Shape of You',
 		img:'http://localhost:1234/mp3/2.jpeg',
 		url:'http://localhost:1234/mp3/2.mp3',
 	},
 ];
-var currentPlay = 0;//当前播放第几首
-var currentVolume = 0.5;//当前音量，默认0.5，范围0-1
-// 播放/暂停 点击事件
+var currentPlay = 0;// Which music is currently playing
+var currentVolume = 0.5;// Current volume (default 0.5, range 0-1)
+// Click event: play/pause 
 function playAudio(){
-	// 当前播放状态
+	// Current Play Status
 	console.log(myAudio.paused);
-	// 音乐播放
+	// music play
 	if(myAudio.paused){
 		document.getElementById('adPlay').src = 'http://localhost:1234/image/暂停的副本.png';
 		document.getElementById('adPlay1').src = 'http://localhost:1234/image/暂停的副本.png';
@@ -555,8 +699,7 @@ function playAudio(){
 		myAudio.pause();
 	}
 }
-// 上一曲 点击事件
-// // myAdImg
+// Click event: Previous song 
 function previouTap(){
 	if(currentPlay == 0){
 		currentPlay = myAdAry.length-1;
@@ -576,7 +719,7 @@ function previouTap(){
 		myAudio.play();
 	}
 }
-// 下一曲 点击事件
+// Click event: Next song 
 function nextTap(){
 	if(currentPlay == (myAdAry.length-1)){
 		currentPlay = 0;
@@ -596,7 +739,7 @@ function nextTap(){
 		myAudio.play();
 	}
 }
-// 声音加 点击事件
+// Click event: Turn up the sound
 function addTap(){
 	if(currentVolume < 1){
 		myAudio.volume += 0.1;
@@ -604,7 +747,7 @@ function addTap(){
 		myAudio.volume = 1;
 	}
 }
-// 声音减 点击事件
+// Click event: Turn down the sound
 function reduceTap(){
 	if(currentVolume > 0){
 		myAudio.volume -= 0.1;
@@ -612,7 +755,7 @@ function reduceTap(){
 		myAudio.volume = 0;
 	}
 }
-// 缩放点击事件
+// Click event: Zooming
 function adZoomTap(val){
 	var adBox = document.getElementById('audioBox').style;
 	var adMiniBox = document.getElementById('audioMiniBox').style;
@@ -625,106 +768,274 @@ function adZoomTap(val){
 	}
 }
 
-// 音乐列表
-myAdAry.forEach(function(item,index){
-	// console.log(item);
-	var tr = document.createElement('tr');
-	tr.innerHTML = `
-		<tr>
-			<td class="text-center" > <h4>${item.name}</h4> </td>
-		</tr>
-	`
-	document.getElementById('pcmusiclist').appendChild(tr);
-});
-
-
-// project列表循环追加元素
-projectAry.forEach(function(item,index){
-	// console.log(item);
-	// pc端project左边列表追加
-	$('#pcleftprojectlist').append(`
-		<tr>
-			<td class="text-center" > <h4>${item.tabbleName}</h4> </td>
-		</tr>
-	`);
-	// pc端右边表格列表追加
-	$('#pcproject').append(`
-		<div class="row" style="margin-top: 30px;" >
-			<div class="col-md-10 col-md-offset-1 text-left" style="padding: 0px;color: ${item.color};" data-toggle="collapse" data-target="#cd${index}" >
-				<span class="glyphicon glyphicon-play"></span>
-				<span>${item.tabbleName}</span>
-			</div>
-			<div id="cd${index}" class="col-lg-10 col-md-offset-1 collapse" style="padding:10px;" >
-				<div style="background: #E6E6E6;padding: 10px 30px 10px 30px;border-radius: 10px;" >
-					<div >
-						<div class="col-md-3" style="" >NAME</div>
-						<div class="col-md-3" style="" >DATE</div>
-						<div class="col-md-3" style="" >PROGRESS</div>
-						<div class="col-md-3" style="" >FILES</div>
-					</div>
-					<table id="pcprojecttab${index}" class="table table-bordered" style="" >
-						
-					</table>
-				</div>
-			</div>
-		</div>
-	`);
-	// 移动端
-	$('#ydProject').append(`
-		<div style="padding: 0.5rem 0rem 0.5rem 0rem;box-sizing: border-box;" >
-			<div data-toggle="collapse" data-target="#ydcollapse${index}${index}" style="color:  ${item.color};" >
-				<span class="glyphicon glyphicon-play" ></span>
-				<span>${item.tabbleName}</span>
-			</div>
-			<div class="collapse in" id="ydcollapse${index}${index}" style="padding: 1.25rem 1.5rem 0rem 1.5rem;" >
-				<div class="tab" style="padding: 0.4rem;border-radius: 1rem;" >
-					<div class="tabHead" >
-						<span>NAME</span>
-						<span>DATE</span>
-						<span>PROGRESS</span>
-						<span>FILES</span>
-					</div>
-					<table id="ydProjectTab${index}" class="table table-bordered" style="position: relative;background: #E1E1E1;border-radius: 1rem;overflow: hidden;" >
-						
-					</table>
-				</div>
-				
-			</div>
-		</div>
-	`);
-	item.ary.forEach(function(item1,index1){
-		// console.log(item1);
-		$(`#pcprojecttab${index}`).append(`
+// Music List
+function musicForeach(){
+	myAdAry.forEach(function(item,index){
+		// console.log(item);
+		$('#pcmusiclist').append(`
 			<tr>
-				<td>${item1.name}</td>
-				<td>${item1.date}</td>
-				<td style="backGround:${item1.progressColor}" >${item1.progress}</td>
-				<td>${item1.files}</td>
+				<td class="text-center" > <h4>${item.name}</h4> </td>
 			</tr>
 		`);
-		$(`#ydProjectTab${index}`).append(`
-			<tr>
-				<td>${item1.name}</td>
-				<td>${item1.date}</td>
-				<td style="backGround:${item1.progressColor};" >
-					<span data-toggle="collapse" data-target="#ydcolorselect${index}${index1}" >
-						${item1.progress}
-					</span>
-					<ul id="ydcolorselect${index}${index1}" class="collapse on" style="padding: 0;margin: 0;list-style: none;position: absolute;top:0.6rem;right:4rem;" >
-					  <li onclick="ydcolorselectTap(${index},${index1},'gray')" style="text-algin:center;background:#6C6C6C" >gray</li>
-					  <li onclick="ydcolorselectTap(${index},${index1},'green')" style="text-algin:center;background:#8AE3A3"" >green</li onclick="ydcolorselectTap(${index},${index1},'gray')">
-					  <li onclick="ydcolorselectTap(${index},${index1},'yellow')" style="text-algin:center;background:#E5E2A1"" >yellow</li onclick="ydcolorselectTap(${index},${index1},'gray')">
-					  <li onclick="ydcolorselectTap(${index},${index1},'red')" style="text-algin:center;background:#CC5F6F"" >red</li>
-					</ul>
-				</td>
-				<td>${item1.files}</td>
-			</tr>
-			
-		`);
-	})
-})
-function ydcolorselectTap(index1,index2,color){
-	console.log(index1,index2,color);
+	});
 };
-//gray,green,yellow,red
-//#6C6C6C,#8AE3A3,#E5E2A1,#CC5F6F
+musicForeach();
+
+// Project list
+function projectForeach(){
+	// Empty first
+	$('#pcleftprojectlist').empty();
+	$('#pcproject').empty();
+	$('#ydProject').empty();
+	// Project list loop appends elements
+	projectAry.forEach(function(item,index){
+		// PC: Add to the list on the left of the project
+		$('#pcleftprojectlist').append(`
+			<tr>
+				<td class="text-center" > <h4>${item.tabbleName}</h4> </td>
+			</tr>
+		`);
+		// PC: Additions to the table list on the right
+		$('#pcproject').append(`
+			<div class="row" style="margin-top: 30px;" >
+				<div class="col-md-10 col-md-offset-1 text-left" style="padding: 0px;color: ${item.color};" data-toggle="collapse" data-target="#cd${index}" >
+					<span class="glyphicon glyphicon-play"></span>
+					<span>${item.tabbleName}</span>
+				</div>
+				<div id="cd${index}" class="col-lg-10 col-md-offset-1 collapse" style="padding:10px;" >
+					<div style="background: #E6E6E6;padding: 10px 30px 10px 30px;border-radius: 10px;" >
+						<div >
+							<div class="col-md-3" style="" >NAME</div>
+							<div class="col-md-3" style="" >DATE</div>
+							<div class="col-md-3" style="" >PROGRESS</div>
+							<div class="col-md-3" style="" >FILES</div>
+						</div>
+						<table id="pcprojecttab${index}" class="table"  >
+							
+						</table>
+						<span data-idx="${index}" data-toggle="modal" data-target="#pcprojecttabmodal" class="glyphicon glyphicon-plus-sign"
+							style="font-size:20px;color:#7d7d7d;" >
+						</span>
+					</div>
+				</div>
+			</div>
+		`);
+		// Mobile
+		$('#ydProject').append(`
+			<div style="padding: 0.5rem 0rem 0.5rem 0rem;box-sizing: border-box;" >
+				<div data-toggle="collapse" data-target="#ydcollapse${index}${index}" style="color:  ${item.color};" >
+					<span class="glyphicon glyphicon-play" ></span>
+					<span>${item.tabbleName}</span>
+				</div>
+				<div class="collapse in" id="ydcollapse${index}${index}" style="padding: 1.25rem 1.5rem 0rem 1.5rem;" >
+					<div class="tab" style="padding: 0.4rem;border-radius: 1rem;" >
+						<div class="tabHead" >
+							<span>NAME</span>
+							<span>DATE</span>
+							<span>PROGRESS</span>
+							<span>FILES</span>
+						</div>
+						<table id="ydProjectTab${index}" class="table table-bordered" style="position: relative;background: #E1E1E1;border-radius: 1rem;overflow: hidden;" >
+							
+						</table>
+					</div>
+					
+				</div>
+			</div>
+		`);
+		item.ary.forEach(function(item1,index1){
+			$(`#pcprojecttab${index}`).append(`
+				<tr>
+					<td style="padding: 1rem 0rem 1rem 0rem;border:1px solid #DDDDDD;" >${item1.name}</td>
+					<td style="padding: 1rem 0rem 1rem 0rem;border:1px solid #DDDDDD;" >${item1.date}</td>
+					<td data-idx1="${index}" data-idx2="${index1}" data-toggle="modal" data-target="#pcprojecttabprogressmodal" style="padding: 1rem 0rem 1rem 0rem;border:1px solid #DDDDDD;backGround:${item1.progressColor}" >
+						${item1.progress}
+					</td>
+					<td data-idx1="${index}" data-idx2="${index1}" data-toggle="modal" data-target="#pcprojecttabfilesmodal" style="padding: 1rem 0rem 1rem 0rem;border:1px solid #DDDDDD;" >${item1.files}</td>
+				</tr>
+			`);
+			$(`#ydProjectTab${index}`).append(`
+				<tr>
+					<td>${item1.name}</td>
+					<td>${item1.date}</td>
+					<td style="backGround:${item1.progressColor};" >
+						${item1.progress}
+					</td>
+					<td>${item1.files}</td>
+				</tr>
+				
+			`);
+		})
+	})
+};
+projectForeach();
+// Adding project items
+function addProjectTap(){
+	var obj = {
+		tabbleName:$('#pcprojecttitle').val(),
+		color:$('#pcprojectcolor').val(),
+		ary:[],
+	};
+	projectAry.push(obj);
+	projectForeach();
+	$('#pcprojectmodal').modal('hide');
+}
+var project_tab_idx;
+$('#pcprojecttabmodal').on('show.bs.modal', function (event) {
+	project_tab_idx = $(event.relatedTarget).data('idx');
+})
+function addProjectTabTap(){
+	var selectColor = '#6C6C6C';
+	switch ($('#pcprojectprogress').val()){
+		case 'Not Started':
+			selectColor = '#6C6C6C';
+			break;
+		case 'Complete':
+			selectColor = '#8AE3A3';
+			break;
+		case 'Processing':
+			selectColor = '#E5E2A1';
+			break;
+		case 'Overdue':
+			selectColor = '#CC5F6F';
+			break;
+		default:
+			selectColor = '#6C6C6C';
+			break;
+	}
+	var obj = {
+		name:$('#pcprojectname').val(),
+		date:$('#pcprojectdate').val(),
+		progress:$('#pcprojectprogress').val(),//Not Started, Complete, Processing, Overdue
+		progressColor:selectColor,//#6C6C6C,#8AE3A3,#E5E2A1,#CC5F6F
+		files:$('#pcprojectfiles').val(),//link,img,file
+	};
+	projectAry[project_tab_idx].ary.push(obj);
+	projectForeach();
+	$('#pcprojecttabmodal').modal('hide');
+};
+var project_tab_progress_idx1;
+var project_tab_progress_idx2;
+$('#pcprojecttabprogressmodal').on('show.bs.modal', function (event) {
+	project_tab_progress_idx1 = $(event.relatedTarget).data('idx1');
+	project_tab_progress_idx2 = $(event.relatedTarget).data('idx2');
+})
+function amendProjectTabProgressTap(){
+	var selectColor = '#6C6C6C';
+	switch ($('#pcprojectprogressamend').val()){
+		case 'Not Started':
+			selectColor = '#6C6C6C';
+			break;
+		case 'Complete':
+			selectColor = '#8AE3A3';
+			break;
+		case 'Processing':
+			selectColor = '#E5E2A1';
+			break;
+		case 'Overdue':
+			selectColor = '#CC5F6F';
+			break;
+		default:
+			selectColor = '#6C6C6C';
+			break;
+	}
+	projectAry[project_tab_progress_idx1].ary[project_tab_progress_idx2].progress = $('#pcprojectprogressamend').val();
+	projectAry[project_tab_progress_idx1].ary[project_tab_progress_idx2].progressColor = selectColor;
+	projectForeach();
+	$('#pcprojecttabprogressmodal').modal('hide');
+};
+var project_tab_files_idx1;
+var project_tab_files_idx2;
+$('#pcprojecttabfilesmodal').on('show.bs.modal', function (event) {
+	project_tab_files_idx1 = $(event.relatedTarget).data('idx1');
+	project_tab_files_idx2 = $(event.relatedTarget).data('idx2');
+})
+function amendProjectTabFilesTap(){
+	projectAry[project_tab_files_idx1].ary[project_tab_files_idx2].files = $('#pcprojectfilesamend').val();
+	projectForeach();
+	$('#pcprojecttabfilesmodal').modal('hide');
+};
+
+
+// Daily To-do list
+function todoForeach(){
+	// Empty first
+	$('#pclefttodolist').empty();
+	$('#pcdailyTodo').empty();
+	$('#ydDailytodo').empty();
+	// Additional subelements
+	todoAry.forEach(function(item,index){
+		// PC: Add Daily To-do list in left
+		$('#pclefttodolist').append(`
+			<tr>
+				<td class="text-center" > <h4>${item.date}　　　${item.ary.length}　items</h4> </td>
+			</tr>
+		`);
+		// PC: Add Daily To-do list in right
+		$('#pcdailyTodo').append(`
+			<div class="row" style="margin-top: 30px;" >
+				<div class="col-md-10 col-md-offset-1 text-left" style="padding: 0px;color: ${item.color};" data-toggle="collapse" data-target="#zd${index}" >
+					<span class="glyphicon glyphicon-play"></span>
+					<span>${item.date}</span>
+				</div>
+				<div id="zd${index}" class="col-lg-10 col-md-offset-1 collapse" style="" >
+					<table id="pctodotab${index}" class="table table-bordered" style="margin-top: 10px;background: #E6E6E6;border-radius: 10px;overflow: hidden;">
+						
+					</table>
+					<span data-idx="${index}" data-toggle="modal" data-target="#pctodotabmodal" class="glyphicon glyphicon-plus-sign"
+						style="font-size:20px;color:#7d7d7d;" >
+					</span>
+				</div>
+			</div>
+		`);
+		// Mobile: Add list
+		$('#ydDailytodo').append(`
+			<div style="padding: 0.5rem 0rem 0.5rem 0rem;box-sizing: border-box;" >
+				<div data-toggle="collapse" data-target="#ydcollapse${index}" style="color: ${item.color};" >
+					<span class="glyphicon glyphicon-play" ></span>
+					<span>${item.date}</span>
+				</div>
+				<div class="collapse in" id="ydcollapse${index}" style="padding: 1.25rem 2rem 0rem 2rem;" >
+					<table id="ydtodotab${index}" class="table table-bordered" style="background: #E1E1E1;border-radius: 1rem;overflow: hidden;" >
+						
+					</table>
+				</div>
+			</div>
+		`);
+		item.ary.forEach(function(item1,index1){
+			$(`#pctodotab${index}`).append(`
+				<tr style="border-bottom: 1px solid #DDDDDD;" ><td style="padding: 1.8rem;" class="text-left" ><input type="checkbox" >　　${item1.content}</td></tr>
+			`)
+		});
+		item.ary.forEach(function(item1,index1){
+			$(`#ydtodotab${index}`).append(`
+				<tr style="border-bottom: 0.08rem solid #DDDDDD;" ><td style="padding: 0.8rem;" ><input type="checkbox">　　${item1.content}</td></tr>
+			`)
+		});
+	});
+};
+todoForeach();
+// Adding Daily To-do items
+function addTodoTap(){
+	var obj = {
+		date:$('#pctododate').val(),
+		color:$('#pctodocolor').val(),
+		ary:[],
+	};
+	todoAry.push(obj);
+	todoForeach();
+	$('#pctodomodal').modal('hide');
+};
+var todo_tab_idx;
+$('#pctodotabmodal').on('show.bs.modal', function (event) {
+	todo_tab_idx = $(event.relatedTarget).data('idx');
+})
+function addTodoTabTap(){
+	var obj = {
+		check:false,
+		content:$('#pctodocontent').val(),
+	};
+	todoAry[todo_tab_idx].ary.push(obj);
+	todoForeach();
+	$('#pctodotabmodal').modal('hide');
+};

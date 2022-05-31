@@ -26,24 +26,21 @@ div::-webkit-scrollbar{
 .dropdown-menu li{
 	text-align: center;
 }
-/* ******************************************PC端样式****************************************** */
+/* ******************************************PC****************************************** */
 .PCbox{
 	height: 100%;
 	padding: 0px;
 	margin: 0px;
-	/* border: 1px solid red; */
 }
 .leftBox{
 	height: 100%;
 	padding: 0px;
 	background: #DEDEDE;
-	/* border: 1px solid blue; */
 }
 .user{
 	height: 30%;
 	text-align: center;
 	border-bottom: 2px solid #C1C1C1;
-	/* border: 1px solid #F26C74; */
 }
 .touxiang{
 	margin-top: 1rem;
@@ -64,7 +61,6 @@ div::-webkit-scrollbar{
 	overflow-y: scroll;
 	padding-bottom: 30px;
 	padding: 0px;
-	/* border: 1px solid darkblue; */
 }
 .leftTable td{
 	border-bottom: 1px solid #C1C1C1;
@@ -72,7 +68,6 @@ div::-webkit-scrollbar{
 .rightBox{
 	height: 100%;
 	padding: 0px;
-	/* border: 1px solid firebrick; */
 }
 .topBox{
 	position: relative;
@@ -89,8 +84,8 @@ div::-webkit-scrollbar{
 	height: 100%;
 	padding: 200px 500px 200px 500px;
 	background: #fff;
-	animation-name: pclogdh;/*动画名称*/
-	animation-duration: 0.5s;/*动画完成一个周期所花费的秒*/
+	animation-name: pclogdh;/*Animation name*/
+	animation-duration: 0.5s;/*Time taken for the animation to complete*/
 	animation-timing-function: linear;
 	animation-fill-mode: forwards;
 	animation-play-state: paused;
@@ -122,14 +117,12 @@ div::-webkit-scrollbar{
 	width: 100%;
 	position: absolute;
 	bottom: 0px;
-	/* padding: 0px; */
 	display: flex;
 	flex-direction: row;
 	align-items: flex-end;
 	justify-content: space-around;
 	padding-left: 5%;
 	padding-right: 5%;
-	/* border: 1px  solid firebrick; */
 }
 .selectBtn{
 	width: 200px;
@@ -138,19 +131,13 @@ div::-webkit-scrollbar{
 	margin: 0px;
 	font-weight: 700;
 	border-radius: 5px 5px 0px 0px;
-	/* border: 1px solid chartreuse; */
 }
 .selectBox ul{
 	width: 200px;
 	padding: 0px;
-	/* border:1px solid red; */
-}
-.selectBox ul li{
-	/* border:1px solid red; */
 }
 .selectBox ul li a{
 	text-align: center;
-	/* border:1px solid green; */
 }
 .bottomBox{
 	width: 100%;
@@ -158,7 +145,6 @@ div::-webkit-scrollbar{
 	overflow-y: scroll;
 	padding: 0px;
 	margin: 0px;
-	/* border: 1px solid saddlebrown; */
 }
 .userinfo{
 	display: none;
@@ -166,7 +152,6 @@ div::-webkit-scrollbar{
 	height: 100%;
 	margin: 0px;
 	padding: 0px;
-	/* border: 1px solid red; */
 }
 .userinfo .touxiang{
 	margin-top: 30px;
@@ -179,7 +164,6 @@ div::-webkit-scrollbar{
 	align-items: center;
 	justify-content: center;
 	margin-bottom: 10px;
-	/* border: 1px solid gold; */
 }
 .userinfo .row img{
 	margin-right: 30px;
@@ -192,29 +176,30 @@ div::-webkit-scrollbar{
 	width: 260px;
 	text-align: left;
 	color: #838383;
-	/* border: 1px solid darkred; */
 }
+/* Daily To-do */
 .dailyTodo{
 	display: none;
 	width: 100%;
 	height: 100%;
-	/* border: 1px solid red; */
 }
+
+/* Project */
 .project{
 	display: none;
 	width: 100%;
 	height: 100%;
 	padding-bottom: 30px;
-	/* border: 1px solid red; */
 }
 .project td{
 	width: 25%;
 }
+
+/* Timer */
 .Timer{
 	display: none;
 	width: 100%;
 	height: 100%;
-	/* border: 1px solid red; */
 }
 .Timer .timerWarp{
 	position: relative;
@@ -283,20 +268,18 @@ div::-webkit-scrollbar{
 	right: 8px;
 	float: right;
 	width: 30px;
-	/* margin: 10px 10px 0px 0px; */
 }
 .timerMiniBox h1{
 	width: 100%;
 	box-sizing: border-box;
 	text-align: center;
 	font-size: 80px;
-	/* border: 1px solid red; */
 }
+/* Music player */
 .MusicPlayer{
 	display: none;
 	width: 100%;
 	height: 100%;
-	/* border: 1px solid blue; */
 }
 .MusicPlayer .audioBox{
 	display: block;
@@ -385,7 +368,7 @@ div::-webkit-scrollbar{
 .audioMiniBox .next{
 	width: 20px;
 }
-/* ******************************************移动端样式****************************************** */
+/* *******************************************Mobile***************************************** */
 .YDbox{
 	width: 100%;
 	height: 100%;
@@ -394,11 +377,7 @@ div::-webkit-scrollbar{
 	padding-top: 9rem;
 	padding-bottom: 9rem;
 	overflow-y: scroll;
-	/* border: 1px solid red; */
 }
-/* .YDbox .logo:hover{
-	animation-play-state: running;
-} */
 .YDbox .logo{
 	z-index: 99;
 	position: fixed;
@@ -411,9 +390,8 @@ div::-webkit-scrollbar{
 	background: #fff;
 	align-items: center;
 	justify-content: center;
-	/* border: 1px solid blueviolet; */
-	animation-name: logdh;/*动画名称*/
-	animation-duration: 0.5s;/*动画完成一个周期所花费的秒*/
+	animation-name: logdh;/*Animation name*/
+	animation-duration: 0.5s;/*Time taken for the animation to complete*/
 	animation-timing-function: linear;
 	animation-fill-mode: forwards;
 	animation-play-state: paused;
@@ -446,13 +424,11 @@ div::-webkit-scrollbar{
 	height: 8.9rem;
 	background: #fff;
 	border-bottom: 0.1625rem solid #6C6C6C;
-	/* border: 1px solid green; */
 }
 .YDbox .topBox .dropdown{
 	margin-top: 2.8rem;
 	float: right;
 	text-align: right;
-	/* border: 1px solid blueviolet; */
 }
 .YDbox .topBox .menuicon{
 	margin-right: 1.8rem;
@@ -473,7 +449,6 @@ div::-webkit-scrollbar{
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-around;
-	/* border: 1px solid yellow; */
 }
 .YDbox .bottomBox .img{
 	padding: 0.9125rem;
@@ -491,17 +466,14 @@ div::-webkit-scrollbar{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	/* border: 1px solid yellowgreen; */
 }
 .YDbox .contentBox .list1{
 	display: none;
 	width: 100%;
-	/* border: 1px solid saddlebrown; */
 }
 .YDbox .contentBox .list2{
 	display: none;
 	width: 100%;
-	/* border: 1px solid saddlebrown; */
 }
 .YDbox .contentBox .list2 .tab{
 	width: 100%;
@@ -518,11 +490,9 @@ div::-webkit-scrollbar{
 	width: 25%;
 	text-align: center;
 	font-size: 0.4rem;
-	/* border: 1px solid firebrick; */
 }
 .YDbox .contentBox .list2 .tab table{
 	width: 100%;
-	/* border: 1px solid darkblue; */
 }
 .YDbox .contentBox .list2 .tab table td{
 	width: 25%;
@@ -537,7 +507,6 @@ div::-webkit-scrollbar{
 	display: none;
 	width: 100%;
 	position: relative;
-	/* border: 1px solid red; */
 }
 .YDbox .contentBox .timer h2{
 	margin-top: 2.5rem;
@@ -578,7 +547,6 @@ div::-webkit-scrollbar{
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-	/* border: 1px solid darkblue; */
 }
 .YDbox .contentBox .timer .btnBox div{
 	width: 6rem;
@@ -597,9 +565,6 @@ div::-webkit-scrollbar{
 	left: 0px;
 	right: 0px;
 	margin: 0 auto;
-	/* width: 100%; */
-	/* height: 100%; */
-	/* border: 1px solid red; */
 }
 .YDbox .contentBox .timer .setWarp .box{
 	padding-bottom: 1.25rem;
@@ -615,7 +580,6 @@ div::-webkit-scrollbar{
 }
 .YDbox .contentBox .timer .row{
 	margin-top: 0.7rem;
-	/* width: 18.75rem; */
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -627,11 +591,9 @@ div::-webkit-scrollbar{
 .YDbox .contentBox .music{
 	display: none;
 	width: 100%;
-	/* border: 1px solid red; */
 }
 .YDbox .contentBox .music .musicWarp{
 	z-index: 99;
-	/* transform: rotate(0deg); */
 	margin-top: 3.125rem;
 	position: relative;
 	background: #E1E1E1;
@@ -640,8 +602,8 @@ div::-webkit-scrollbar{
 	flex-direction: column;
 	align-items: center;
 	padding: 4rem 0rem 2rem 0rem;
-	animation-name: ydmusicfang;/*动画名称*/
-	animation-duration: 0.5s;/*动画完成一个周期所花费的秒*/
+	animation-name: ydmusicfang;/*Animation name*/
+	animation-duration: 0.5s;/*Time taken for the animation to complete*/
 	animation-timing-function: linear;
 	animation-fill-mode: forwards;
 	animation-play-state: paused;
@@ -697,7 +659,6 @@ div::-webkit-scrollbar{
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-around;
-	/* border: 1px solid saddlebrown; */
 }
 .YDbox .contentBox .music .musicWarp .box1 .next{
 	width: 4rem;
@@ -731,7 +692,6 @@ div::-webkit-scrollbar{
 .YDbox .contentBox .userinfo{
 	display: block;
 	width: 100%;
-	/* border: 1px solid red; */
 }
 .YDbox .contentBox .userinfo .box{
 	display: flex;
@@ -745,6 +705,5 @@ div::-webkit-scrollbar{
 	border-radius: 50%;
 }
 .YDbox .contentBox .userinfo .box .row{
-	/* border: 1px solid darkblue; */
 	color: red;
 }
