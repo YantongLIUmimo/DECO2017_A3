@@ -684,6 +684,19 @@ var myAdAry = [
 ];
 var currentPlay = 0;// Which music is currently playing
 var currentVolume = 0.5;// Current volume (default 0.5, range 0-1)
+
+// 初始化音乐
+function initMusic(){
+	document.getElementById('adPlay').src = 'http://localhost:1234/image/暂停的副本.png';
+	document.getElementById('adPlay1').src = 'http://localhost:1234/image/暂停的副本.png';
+	document.getElementById('myAdImg').src = myAdAry[currentPlay].img;
+	document.getElementById('myAdName').innerHTML = myAdAry[currentPlay].name;
+	document.getElementById('myAdImg1').src = myAdAry[currentPlay].img;
+	document.getElementById('myAdName1').innerHTML = myAdAry[currentPlay].name;
+   }
+   initMusic();
+
+   
 // Click event: play/pause 
 function playAudio(){
 	// Current Play Status
@@ -708,6 +721,8 @@ function previouTap(){
 		document.getElementById('myAdName').innerHTML = myAdAry[currentPlay].name;
 		document.getElementById('myAdImg1').src = myAdAry[currentPlay].img;
 		document.getElementById('myAdName1').innerHTML = myAdAry[currentPlay].name;
+		document.getElementById('adPlay').src = 'http://localhost:1234/image/播放2的副本2.png';
+        document.getElementById('adPlay1').src = 'http://localhost:1234/image/播放2的副本2.png';
 		myAudio.play();
 	}else{
 		currentPlay -= 1;
@@ -716,6 +731,8 @@ function previouTap(){
 		document.getElementById('myAdName').innerHTML = myAdAry[currentPlay].name;
 		document.getElementById('myAdImg1').src = myAdAry[currentPlay].img;
 		document.getElementById('myAdName1').innerHTML = myAdAry[currentPlay].name;
+		document.getElementById('adPlay').src = 'http://localhost:1234/image/播放2的副本2.png';
+        document.getElementById('adPlay1').src = 'http://localhost:1234/image/播放2的副本2.png';
 		myAudio.play();
 	}
 }
@@ -728,6 +745,8 @@ function nextTap(){
 		document.getElementById('myAdName').innerHTML = myAdAry[currentPlay].name;
 		document.getElementById('myAdImg1').src = myAdAry[currentPlay].img;
 		document.getElementById('myAdName1').innerHTML = myAdAry[currentPlay].name;
+		document.getElementById('adPlay').src = 'http://localhost:1234/image/播放2的副本2.png';
+		document.getElementById('adPlay1').src = 'http://localhost:1234/image/播放2的副本2.png';
 		myAudio.play();
 	}else{
 		currentPlay += 1;
@@ -736,6 +755,8 @@ function nextTap(){
 		document.getElementById('myAdName').innerHTML = myAdAry[currentPlay].name;
 		document.getElementById('myAdImg1').src = myAdAry[currentPlay].img;
 		document.getElementById('myAdName1').innerHTML = myAdAry[currentPlay].name;
+		document.getElementById('adPlay').src = 'http://localhost:1234/image/播放2的副本2.png';
+		document.getElementById('adPlay1').src = 'http://localhost:1234/image/播放2的副本2.png';
 		myAudio.play();
 	}
 }
